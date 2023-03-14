@@ -1,0 +1,20 @@
+=============================================================================
+Login --> Hora: 18:52:36 --> Fecha: lunes, 13 de marzo de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 18:52:37 --> Fecha: lunes, 13 de marzo de 2023
+Método: {"Usuario":"JSOR","Pass":"Sor123"} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 18:52:55 --> Fecha: lunes, 13 de marzo de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 18:52:55 --> Fecha: lunes, 13 de marzo de 2023
+Método: {"Usuario":"JSOR","Pass":"Sor123"} 
+Autenticar
+
+Token generado --> Hora: 18:53:28 --> Fecha: lunes, 13 de marzo de 2023
+Método: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkpTT1IiLCJuYmYiOjE2Nzg3NTUyMDgsImV4cCI6MTY3ODc1NjcwOCwiaWF0IjoxNjc4NzU1MjA4LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjYyNjcxIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo2MjY3MSJ9.XMEC2xCf5lwRykI8yS0fxUfo5BpyeJ8UqT9WOnyJ1vk usuario: JSOR 
+Autenticar
+
