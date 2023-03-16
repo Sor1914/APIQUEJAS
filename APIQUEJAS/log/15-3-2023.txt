@@ -1,0 +1,108 @@
+=============================================================================
+Login --> Hora: 18:22:16 --> Fecha: miércoles, 15 de marzo de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 18:22:16 --> Fecha: miércoles, 15 de marzo de 2023
+Método: {"Usuario":"JSOR","Pass":"Sor123"} 
+Autenticar
+
+Token generado --> Hora: 18:22:16 --> Fecha: miércoles, 15 de marzo de 2023
+Método: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkpTT1IiLCJuYmYiOjE2Nzg5MjYxMzYsImV4cCI6MTY3ODkyNzYzNiwiaWF0IjoxNjc4OTI2MTM2LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjYyNjcxIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo2MjY3MSJ9.csSw8CyQWo5amppkoXgU7M99fntw-J7TynuSoLQpTN8 usuario: JSOR 
+Autenticar
+
+=============================================================================
+Login --> Hora: 18:22:48 --> Fecha: miércoles, 15 de marzo de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 18:22:49 --> Fecha: miércoles, 15 de marzo de 2023
+Método: {"Usuario":"JSOR","Pass":"Sor123"} 
+Autenticar
+
+Solicitud rechazada --> Hora: 18:23:15 --> Fecha: miércoles, 15 de marzo de 2023
+Método: No autorizado 
+Autenticar
+
+=============================================================================
+Login --> Hora: 18:24:21 --> Fecha: miércoles, 15 de marzo de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 18:24:21 --> Fecha: miércoles, 15 de marzo de 2023
+Método: {"Usuario":"John","Pass":"Doe"} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 18:48:22 --> Fecha: miércoles, 15 de marzo de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 18:48:22 --> Fecha: miércoles, 15 de marzo de 2023
+Método: {"Usuario":"JSOR","Pass":"Sor123"} 
+Autenticar
+
+Token generado --> Hora: 18:48:25 --> Fecha: miércoles, 15 de marzo de 2023
+Método: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkpTT1IiLCJuYmYiOjE2Nzg5Mjc3MDUsImV4cCI6MTY3ODkyOTIwNSwiaWF0IjoxNjc4OTI3NzA1LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjYyNjcxIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo2MjY3MSJ9.fpigsHW0WDFR5rAIfYtr0qHqp8m6DrgwxFpGi1WwdPo usuario: JSOR 
+Autenticar
+
+=============================================================================
+Login --> Hora: 18:52:33 --> Fecha: miércoles, 15 de marzo de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 18:52:33 --> Fecha: miércoles, 15 de marzo de 2023
+Método: {"Usuario":"JSOR","Pass":"Sor123"} 
+Autenticar
+
+Token generado --> Hora: 18:52:35 --> Fecha: miércoles, 15 de marzo de 2023
+Método: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkpTT1IiLCJuYmYiOjE2Nzg5Mjc5NTUsImV4cCI6MTY3ODkyOTQ1NSwiaWF0IjoxNjc4OTI3OTU1LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjYyNjcxIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo2MjY3MSJ9.WGymAHIiH8aj5T0mWBJjT5ZNNmzAb97kMVG0Cd0r9Ws usuario: JSOR 
+Autenticar
+
+=============================================================================
+Login --> Hora: 18:55:40 --> Fecha: miércoles, 15 de marzo de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 18:55:40 --> Fecha: miércoles, 15 de marzo de 2023
+Método: {"Usuario":"123","Pass":"123"} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 18:56:39 --> Fecha: miércoles, 15 de marzo de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 18:56:39 --> Fecha: miércoles, 15 de marzo de 2023
+Método: {"Usuario":"123","Pass":"123"} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 18:57:01 --> Fecha: miércoles, 15 de marzo de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 18:57:01 --> Fecha: miércoles, 15 de marzo de 2023
+Método: {"Usuario":"JSOR","Pass":"Sor123"} 
+Autenticar
+
+Token generado --> Hora: 18:57:01 --> Fecha: miércoles, 15 de marzo de 2023
+Método: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkpTT1IiLCJuYmYiOjE2Nzg5MjgyMjEsImV4cCI6MTY3ODkyOTcyMSwiaWF0IjoxNjc4OTI4MjIxLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjYyNjcxIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo2MjY3MSJ9._rLL0k3c_X95WDUae5EC76Wf_4UeF4rfkhIy-tDtfhA usuario: JSOR 
+Autenticar
+
+=============================================================================
+Login --> Hora: 19:00:31 --> Fecha: miércoles, 15 de marzo de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 19:00:31 --> Fecha: miércoles, 15 de marzo de 2023
+Método: {"Usuario":"SDfdsf","Pass":"asdfasdf"} 
+Autenticar
+
+Solicitud rechazada --> Hora: 19:00:31 --> Fecha: miércoles, 15 de marzo de 2023
+Método: No autorizado 
+Autenticar
+
+=============================================================================
+Login --> Hora: 19:08:18 --> Fecha: miércoles, 15 de marzo de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 19:08:18 --> Fecha: miércoles, 15 de marzo de 2023
+Método: {"Usuario":"JSOR","Pass":"Sor123"} 
+Autenticar
+
+Token generado --> Hora: 19:08:19 --> Fecha: miércoles, 15 de marzo de 2023
+Método: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkpTT1IiLCJuYmYiOjE2Nzg5Mjg4OTksImV4cCI6MTY3ODkzMDM5OSwiaWF0IjoxNjc4OTI4ODk5LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjYyNjcxIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo2MjY3MSJ9.3KXp9w_mV79DGc6TlfeU6Yv8OPc5iQ_4c6QpS9LGaVY usuario: JSOR 
+Autenticar
+

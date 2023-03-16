@@ -61,11 +61,57 @@ namespace APIQUEJAS.Sql {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a SELECT COUNT(IDUSUARIO) AS EXISTE FROM USUARIOS WHERE USUARIO = &apos;{0}&apos; AND PASS = &apos;{1}&apos;;.
+        ///   Busca una cadena traducida similar a INSERT INTO Usuario(Usuario, Pass, Nombres, Apellidos, Email, Fecha_Nacimiento, Cui, Departamento, Id_Rol, Id_Cargo, Id_Punto_Atencion, Estado)
+        ///VALUES (&apos;{0}&apos;,&apos;{1}&apos;,&apos;{2}&apos;,&apos;{3}&apos;,&apos;{4}&apos;,&apos;{5}&apos;,&apos;{6}&apos;,&apos;{7}&apos;,{8},{9},{10},&apos;{11}&apos;);.
+        /// </summary>
+        internal static string InsertaUsuario {
+            get {
+                return ResourceManager.GetString("InsertaUsuario", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a SELECT COUNT(Id_Cuenta) AS EXISTE FROM Cuenta WHERE TRIM(Numero_Cuenta) = &apos;{0}&apos; AND ESTADO = &apos;A&apos;;.
+        /// </summary>
+        internal static string ValidaCuenta {
+            get {
+                return ResourceManager.GetString("ValidaCuenta", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a SELECT COUNT(Id_Usuario) AS EXISTE FROM Usuario WHERE Usuario= &apos;{0}&apos; AND Pass = &apos;{1}&apos;;.
         /// </summary>
         internal static string ValidaExistenciaUsuario {
             get {
                 return ResourceManager.GetString("ValidaExistenciaUsuario", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a SELECT COUNT(Id_Usuario) AS EXISTE FROM USUARIO WHERE TRIM(Email) = &apos;{0}&apos; AND Estado = &apos;A&apos;;.
+        /// </summary>
+        internal static string ValidarCorreoRepetido {
+            get {
+                return ResourceManager.GetString("ValidarCorreoRepetido", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a SELECT COUNT(Id_Usuario) AS EXISTE FROM USUARIO WHERE TRIM(Cui) = &apos;{0}&apos; AND Estado = &apos;A&apos;;.
+        /// </summary>
+        internal static string ValidarCUIRepetido {
+            get {
+                return ResourceManager.GetString("ValidarCUIRepetido", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a SELECT COUNT(Id_Usuario) AS EXISTE FROM Usuario WHERE TRIM(Usuario) = &apos;{0}&apos; AND Estado = &apos;A&apos;;.
+        /// </summary>
+        internal static string ValidarUsuarioRepetido {
+            get {
+                return ResourceManager.GetString("ValidarUsuarioRepetido", resourceCulture);
             }
         }
     }

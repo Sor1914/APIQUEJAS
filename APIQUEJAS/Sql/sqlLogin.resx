@@ -117,7 +117,23 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="InsertaUsuario" xml:space="preserve">
+    <value>INSERT INTO Usuario(Usuario, Pass, Nombres, Apellidos, Email, Fecha_Nacimiento, Cui, Departamento, Id_Rol, Id_Cargo, Id_Punto_Atencion, Estado)
+VALUES ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}',{8},{9},{10},'{11}');</value>
+  </data>
+  <data name="ValidaCuenta" xml:space="preserve">
+    <value>SELECT COUNT(Id_Cuenta) AS EXISTE FROM Cuenta WHERE TRIM(Numero_Cuenta) = '{0}' AND ESTADO = 'A';</value>
+  </data>
   <data name="ValidaExistenciaUsuario" xml:space="preserve">
-    <value>SELECT COUNT(IDUSUARIO) AS EXISTE FROM USUARIOS WHERE USUARIO = '{0}' AND PASS = '{1}';</value>
+    <value>SELECT COUNT(Id_Usuario) AS EXISTE FROM Usuario WHERE Usuario= '{0}' AND Pass = '{1}';</value>
+  </data>
+  <data name="ValidarCorreoRepetido" xml:space="preserve">
+    <value>SELECT COUNT(Id_Usuario) AS EXISTE FROM USUARIO WHERE TRIM(Email) = '{0}' AND Estado = 'A';</value>
+  </data>
+  <data name="ValidarCUIRepetido" xml:space="preserve">
+    <value>SELECT COUNT(Id_Usuario) AS EXISTE FROM USUARIO WHERE TRIM(Cui) = '{0}' AND Estado = 'A';</value>
+  </data>
+  <data name="ValidarUsuarioRepetido" xml:space="preserve">
+    <value>SELECT COUNT(Id_Usuario) AS EXISTE FROM Usuario WHERE TRIM(Usuario) = '{0}' AND Estado = 'A';</value>
   </data>
 </root>

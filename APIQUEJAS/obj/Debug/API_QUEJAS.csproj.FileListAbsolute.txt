@@ -67,8 +67,8 @@ C:\Quejas\APIQUEJAS\APIQUEJAS\bin\System.Web.WebPages.Razor.dll
 C:\Quejas\APIQUEJAS\APIQUEJAS\bin\WebGrease.dll
 C:\Quejas\APIQUEJAS\APIQUEJAS\bin\Microsoft.IdentityModel.Logging.xml
 C:\Quejas\APIQUEJAS\APIQUEJAS\bin\Microsoft.IdentityModel.Tokens.xml
-C:\Quejas\APIQUEJAS\APIQUEJAS\bin\System.IdentityModel.Tokens.Jwt.xml
 C:\Quejas\APIQUEJAS\APIQUEJAS\bin\Newtonsoft.Json.xml
+C:\Quejas\APIQUEJAS\APIQUEJAS\bin\System.IdentityModel.Tokens.Jwt.xml
 C:\Quejas\APIQUEJAS\APIQUEJAS\bin\System.Net.Http.Formatting.xml
 C:\Quejas\APIQUEJAS\APIQUEJAS\bin\System.Web.Helpers.xml
 C:\Quejas\APIQUEJAS\APIQUEJAS\bin\System.Web.Http.xml

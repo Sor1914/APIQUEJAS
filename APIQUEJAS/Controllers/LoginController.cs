@@ -25,7 +25,7 @@ namespace APIQUEJAS.Controllers
          */
         [HttpPost]
         [Route("AUTENTICAR")]
-        public IHttpActionResult Autenticar(LoguinRequest login)
+        public IHttpActionResult autenticar(LoginRequest login)
         {
             _Log.guardarBitacora("Login");
             _Log.guardarBitacoraCuerpo("Solicitud recibida", "Autenticar", JsonConvert.SerializeObject(login));
@@ -48,6 +48,65 @@ namespace APIQUEJAS.Controllers
                 return Unauthorized();
             }
 
+        }
+
+        [HttpPost]
+        [Route("REGISTRAR")]
+        public IHttpActionResult registrar(RegistroRequest registro)
+        {
+            try
+            {
+                if (registro == null)
+                    throw new HttpResponseException(HttpStatusCode.BadRequest);
+                if (!validarParametro(registro.Usuario))
+                    throw new HttpResponseException(HttpStatusCode.BadRequest);
+                bool usuarioExiste = _Consultas.validarUsuarioRepetido(registro.Usuario.Trim().ToUpper(), 1);
+                bool correoExiste = _Consultas.validarUsuarioRepetido(registro.Email.Trim().ToUpper(), 2);
+                bool cuiExiste = _Consultas.validarUsuarioRepetido(registro.CUI.Trim().ToUpper(), 3);
+                bool cuentaExiste = _Consultas.validarUsuarioRepetido(registro.NumeroCuenta.Trim().ToUpper(), 4);
+                if (cuentaExiste)
+                {
+                    if (!usuarioExiste)
+                    {
+                        if (!correoExiste)
+                        {
+                            if (!cuiExiste)
+                            {
+                                bool exitoRegistro = _Consultas.insertarUsuario(registro);
+                                if (exitoRegistro)
+                                {
+                                    return Ok(exitoRegistro);
+                                }
+                                else
+                                {
+                                    return InternalServerError();
+                                }
+                            }
+                            else
+                            {
+                                return BadRequest("El CUI ya existe");
+                            }
+
+                        }
+                        else
+                        {
+                            return BadRequest("El correo ya existe");
+                        }
+                    }
+                    else
+                    {
+                        return BadRequest("El usuario ya existe");
+                    }
+                } else
+                {
+                    return BadRequest("La cuenta no existe");
+                }               
+            }
+            catch (Exception ex)
+            {
+                return InternalServerError();
+            }
+            
         }
 
         public bool validarParametro(string valor)

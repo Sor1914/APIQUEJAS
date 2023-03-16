@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Web;
+using APIQUEJAS.Models;
 using APIQUEJAS.Sql;
 
 namespace APIQUEJAS.Clases
@@ -12,7 +13,7 @@ namespace APIQUEJAS.Clases
         string consulta;
         clsSqlServer _Ad = new clsSqlServer();
         DataTable dtResultado = new DataTable();
-        bool respuesta; 
+        bool respuesta;
         public bool validarExistenciaUsuario(string usuario, string pass)
         {
             consulta = string.Format(sqlLogin.ValidaExistenciaUsuario, usuario, pass);
@@ -20,7 +21,35 @@ namespace APIQUEJAS.Clases
             if (Convert.ToInt32(dtResultado.Rows[0]["EXISTE"]) == 1)
                 respuesta = true;
             else
+                respuesta = false;
+            return respuesta;
+        }
+
+        public bool validarUsuarioRepetido(string usuario, int tipo)
+        {
+            if (tipo == 1)
+                consulta = string.Format(sqlLogin.ValidarCorreoRepetido, usuario);
+            else if (tipo == 2)
+                consulta = string.Format(sqlLogin.ValidarUsuarioRepetido, usuario);
+            else if (tipo == 3)
+                consulta = string.Format(sqlLogin.ValidarCUIRepetido, usuario);
+            else if (tipo == 4)
+                consulta = string.Format(sqlLogin.ValidaCuenta, usuario);
+            dtResultado = _Ad.realizarConsulta(consulta);
+            if (Convert.ToInt32(dtResultado.Rows[0]["EXISTE"]) == 1)
                 respuesta = true;
+            else
+                respuesta = false;
+            return respuesta;
+        }
+
+        public bool insertarUsuario(RegistroRequest registro)
+        {
+            consulta = string.Format(sqlLogin.InsertaUsuario,
+                registro.Usuario, registro.Password, registro.Nombres, registro.Apellidos, registro.Email,
+                registro.FechaNacimiento, registro.CUI, registro.Departamento, registro.IdRol, registro.IdCargo,
+                registro.IdPuntoAtencion, registro.Estado);
+            respuesta = _Ad.realizarDml(consulta);
             return respuesta;
         }
     }
