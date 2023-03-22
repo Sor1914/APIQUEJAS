@@ -61,8 +61,8 @@ namespace APIQUEJAS.Sql {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a INSERT INTO Usuario(Usuario, Pass, Nombres, Apellidos, Email, Fecha_Nacimiento, Cui, Departamento, Id_Rol, Id_Cargo, Id_Punto_Atencion, Estado)
-        ///VALUES (&apos;{0}&apos;,&apos;{1}&apos;,&apos;{2}&apos;,&apos;{3}&apos;,&apos;{4}&apos;,&apos;{5}&apos;,&apos;{6}&apos;,&apos;{7}&apos;,{8},{9},{10},&apos;{11}&apos;);.
+        ///   Busca una cadena traducida similar a INSERT INTO Usuario(Usuario, Pass, Nombres, Apellidos, Email, Cui, Departamento, Id_Rol, Id_Cargo, Id_Punto_Atencion, Estado)
+        ///VALUES (&apos;{0}&apos;,ENCRYPTBYPASSPHRASE(&apos;JS0R&apos;, &apos;{1}&apos; ),&apos;{2}&apos;,&apos;{3}&apos;,&apos;{4}&apos;,&apos;{5}&apos;,&apos;{6}&apos;,{7},{8},{9},&apos;{10}&apos;);.
         /// </summary>
         internal static string InsertaUsuario {
             get {
@@ -80,7 +80,7 @@ namespace APIQUEJAS.Sql {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a SELECT COUNT(Id_Usuario) AS EXISTE FROM Usuario WHERE Usuario= &apos;{0}&apos; AND Pass = &apos;{1}&apos;;.
+        ///   Busca una cadena traducida similar a SELECT COUNT(Id_Usuario) AS EXISTE FROM Usuario WHERE Usuario= &apos;{0}&apos; AND CAST(DECRYPTBYPASSPHRASE(&apos;JS0R&apos;,Pass) AS VARCHAR(MAX)) = &apos;{1}&apos;;.
         /// </summary>
         internal static string ValidaExistenciaUsuario {
             get {

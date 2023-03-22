@@ -55,16 +55,15 @@ CREATE TABLE Punto_Atencion(
 );
 
 INSERT INTO Punto_Atencion (Nombre_Punto_Atencion, Id_Region, Estado)
-VALUES ('PUNTOATENCION', 1, 'A');
+VALUES ('NoAsignado', 1, 'A');
 
 CREATE TABLE Usuario(
      Id_Usuario int NOT NULL IDENTITY PRIMARY KEY,	 
 	 Usuario VARCHAR(15),
-	 Pass VARCHAR(50),
+	 Pass VARBINARY(MAX),
 	 Nombres VARCHAR(20),
 	 Apellidos VARCHAR(20),
-	 Email VARCHAR(50),
-	 Fecha_Nacimiento DATE ,
+	 Email VARCHAR(50),	 
 	 Cui VARCHAR(15),
 	 Departamento VARCHAR(15),
 	 Id_Rol INT FOREIGN KEY REFERENCES Rol(Id_Rol),
@@ -132,3 +131,7 @@ CREATE TABLE Bitacora(
 	Email VARCHAR(50),
 	Fecha DATETIME DEFAULT CURRENT_TIMESTAMP,		
 );
+
+
+
+SELECT * FROM Usuario WHERE Usuario= 'JSOR' AND CAST(DECRYPTBYPASSPHRASE('JS0R',Pass) AS VARCHAR(MAX)) = DECRYPTBYPASSPHRASE('JS0R','Jonathansor2000');

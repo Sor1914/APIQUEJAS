@@ -1,0 +1,128 @@
+=============================================================================
+Login --> Hora: 17:22:47 --> Fecha: martes, 21 de marzo de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 17:22:47 --> Fecha: martes, 21 de marzo de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor2000"} 
+Autenticar
+
+Solicitud rechazada --> Hora: 17:22:51 --> Fecha: martes, 21 de marzo de 2023
+Método: No autorizado 
+Autenticar
+
+=============================================================================
+Login --> Hora: 17:23:24 --> Fecha: martes, 21 de marzo de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 17:23:25 --> Fecha: martes, 21 de marzo de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor2000"} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 17:29:16 --> Fecha: martes, 21 de marzo de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 17:29:17 --> Fecha: martes, 21 de marzo de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor2000"} 
+Autenticar
+
+Token generado --> Hora: 17:29:21 --> Fecha: martes, 21 de marzo de 2023
+Método: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkpTT1IiLCJuYmYiOjE2Nzk0NDEzNjAsImV4cCI6MTY3OTQ0Mjg2MCwiaWF0IjoxNjc5NDQxMzYwLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjYyNjcxIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo2MjY3MSJ9.xYsnd5xlAZ6LN4qim2J6efOm87_SQw86hsqHnlGblG4 usuario: JSOR 
+Autenticar
+
+=============================================================================
+Login --> Hora: 17:43:10 --> Fecha: martes, 21 de marzo de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 17:43:10 --> Fecha: martes, 21 de marzo de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor2000"} 
+Autenticar
+
+Token generado --> Hora: 17:43:10 --> Fecha: martes, 21 de marzo de 2023
+Método: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkpTT1IiLCJuYmYiOjE2Nzk0NDIxOTAsImV4cCI6MTY3OTQ0MzY5MCwiaWF0IjoxNjc5NDQyMTkwLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjYyNjcxIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo2MjY3MSJ9.z-HLZRtmwzB_6WpxcDC_KdTCKhksE-tcJh_5uLCSZDk usuario: JSOR 
+Autenticar
+
+=============================================================================
+Login --> Hora: 17:43:58 --> Fecha: martes, 21 de marzo de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 17:43:58 --> Fecha: martes, 21 de marzo de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor2000"} 
+Autenticar
+
+Token generado --> Hora: 17:43:58 --> Fecha: martes, 21 de marzo de 2023
+Método: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkpTT1IiLCJuYmYiOjE2Nzk0NDIyMzgsImV4cCI6MTY3OTQ0MzczOCwiaWF0IjoxNjc5NDQyMjM4LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjYyNjcxIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo2MjY3MSJ9.0L3OvA3egXPLmfJeK1OkybuDgTmkP_3KLt3Y34-kHAE usuario: JSOR 
+Autenticar
+
+=============================================================================
+Login --> Hora: 17:46:33 --> Fecha: martes, 21 de marzo de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 17:46:33 --> Fecha: martes, 21 de marzo de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor2000"} 
+Autenticar
+
+Token generado --> Hora: 17:46:33 --> Fecha: martes, 21 de marzo de 2023
+Método: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkpTT1IiLCJuYmYiOjE2Nzk0NDIzOTMsImV4cCI6MTY3OTQ0Mzg5MywiaWF0IjoxNjc5NDQyMzkzLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjYyNjcxIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo2MjY3MSJ9.PLwbninsB1sVnCtKW16JESkkTwj50RMZvaEGfPPdLoA usuario: JSOR 
+Autenticar
+
+=============================================================================
+Login --> Hora: 17:47:22 --> Fecha: martes, 21 de marzo de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 17:47:22 --> Fecha: martes, 21 de marzo de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor2000"} 
+Autenticar
+
+Token generado --> Hora: 17:47:22 --> Fecha: martes, 21 de marzo de 2023
+Método: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkpTT1IiLCJuYmYiOjE2Nzk0NDI0NDIsImV4cCI6MTY3OTQ0Mzk0MiwiaWF0IjoxNjc5NDQyNDQyLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjYyNjcxIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo2MjY3MSJ9.xpUb4RBnsKdQVq3za6WctMyYegwn9KLjmexD1bynS6E usuario: JSOR 
+Autenticar
+
+=============================================================================
+Login --> Hora: 17:48:02 --> Fecha: martes, 21 de marzo de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 17:48:02 --> Fecha: martes, 21 de marzo de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor2000"} 
+Autenticar
+
+Token generado --> Hora: 17:48:02 --> Fecha: martes, 21 de marzo de 2023
+Método: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkpTT1IiLCJuYmYiOjE2Nzk0NDI0ODIsImV4cCI6MTY3OTQ0Mzk4MiwiaWF0IjoxNjc5NDQyNDgyLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjYyNjcxIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo2MjY3MSJ9.uYPiVSIET2w1wNZlzKpQc-t4u-NwpVl5BRA_PQKIWBY usuario: JSOR 
+Autenticar
+
+=============================================================================
+Login --> Hora: 17:50:24 --> Fecha: martes, 21 de marzo de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 17:50:24 --> Fecha: martes, 21 de marzo de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor2000"} 
+Autenticar
+
+Token generado --> Hora: 17:50:24 --> Fecha: martes, 21 de marzo de 2023
+Método: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkpTT1IiLCJuYmYiOjE2Nzk0NDI2MjQsImV4cCI6MTY3OTQ0NDEyNCwiaWF0IjoxNjc5NDQyNjI0LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjYyNjcxIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo2MjY3MSJ9.O3SaL8xaw3SB82BPTbCQ43DK0eGULSVi5pH0S16DAPs usuario: JSOR 
+Autenticar
+
+=============================================================================
+Login --> Hora: 17:50:56 --> Fecha: martes, 21 de marzo de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 17:50:56 --> Fecha: martes, 21 de marzo de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor2000"} 
+Autenticar
+
+Token generado --> Hora: 17:50:56 --> Fecha: martes, 21 de marzo de 2023
+Método: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkpTT1IiLCJuYmYiOjE2Nzk0NDI2NTYsImV4cCI6MTY3OTQ0NDE1NiwiaWF0IjoxNjc5NDQyNjU2LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjYyNjcxIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo2MjY3MSJ9.11PGHNtGXN8Fue_9lRdHNTaisbp5bofRCitglubC8Bs usuario: JSOR 
+Autenticar
+
+=============================================================================
+Login --> Hora: 17:52:54 --> Fecha: martes, 21 de marzo de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 17:52:54 --> Fecha: martes, 21 de marzo de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor2000"} 
+Autenticar
+
+Token generado --> Hora: 17:52:54 --> Fecha: martes, 21 de marzo de 2023
+Método: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkpTT1IiLCJuYmYiOjE2Nzk0NDI3NzQsImV4cCI6MTY3OTQ0NDI3NCwiaWF0IjoxNjc5NDQyNzc0LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjYyNjcxIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo2MjY3MSJ9.WXbe5fUoU56IeUEVpE_euUBsr3IgqNeH1CLZ7H7u1ic usuario: JSOR 
+Autenticar
+

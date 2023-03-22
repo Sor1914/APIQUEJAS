@@ -47,7 +47,7 @@ namespace APIQUEJAS.Clases
         {
             consulta = string.Format(sqlLogin.InsertaUsuario,
                 registro.Usuario, registro.Password, registro.Nombres, registro.Apellidos, registro.Email,
-                registro.FechaNacimiento, registro.CUI, registro.Departamento, registro.IdRol, registro.IdCargo,
+                registro.CUI, registro.Departamento, registro.IdRol, registro.IdCargo,
                 registro.IdPuntoAtencion, registro.Estado);
             respuesta = _Ad.realizarDml(consulta);
             return respuesta;
