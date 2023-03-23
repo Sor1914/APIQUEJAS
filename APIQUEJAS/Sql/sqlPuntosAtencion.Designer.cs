@@ -22,14 +22,14 @@ namespace APIQUEJAS.Sql {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class sqlLogin {
+    internal class sqlPuntosAtencion {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal sqlLogin() {
+        internal sqlPuntosAtencion() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace APIQUEJAS.Sql {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("APIQUEJAS.Sql.sqlLogin", typeof(sqlLogin).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("APIQUEJAS.Sql.sqlPuntosAtencion", typeof(sqlPuntosAtencion).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,57 +61,52 @@ namespace APIQUEJAS.Sql {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a INSERT INTO Usuario(Usuario, Pass, Nombres, Apellidos, Email, Cui, Departamento, Id_Rol, Id_Cargo, Id_Punto_Atencion, Estado)
-        ///VALUES (&apos;{0}&apos;,ENCRYPTBYPASSPHRASE(&apos;JS0R&apos;, &apos;{1}&apos; ),&apos;{2}&apos;,&apos;{3}&apos;,&apos;{4}&apos;,&apos;{5}&apos;,&apos;{6}&apos;,{7},{8},{9},&apos;{10}&apos;);.
+        ///   Busca una cadena traducida similar a UPDATE Punto_Atencion SET Nombre_Punto_Atencion = &apos;{0}&apos;, Id_Region = {1} WHERE Id_Punto_Atencion = {2}.
         /// </summary>
-        internal static string InsertaUsuario {
+        internal static string ActualizaPunto {
             get {
-                return ResourceManager.GetString("InsertaUsuario", resourceCulture);
+                return ResourceManager.GetString("ActualizaPunto", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a SELECT COUNT(Id_Usuario) AS EXISTE FROM USUARIO WHERE TRIM(Email) = &apos;{0}&apos; AND Estado = &apos;A&apos;;.
+        ///   Busca una cadena traducida similar a UPDATE Punto_Atencion SET Estado = &apos;{0}&apos; WHERE Id_Punto_Atencion = {1}.
         /// </summary>
-        internal static string ValidaCorreoRepetido {
+        internal static string EliminaPunto {
             get {
-                return ResourceManager.GetString("ValidaCorreoRepetido", resourceCulture);
+                return ResourceManager.GetString("EliminaPunto", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a SELECT COUNT(Id_Cuenta) AS EXISTE FROM Cuenta WHERE TRIM(Numero_Cuenta) = &apos;{0}&apos; AND ESTADO = &apos;A&apos;;.
+        ///   Busca una cadena traducida similar a INSERT INTO Punto_Atencion(Nombre_Punto_Atencion, Id_Region, Estado) values (&apos;{0}&apos;, {1}, &apos;{2}&apos;);.
         /// </summary>
-        internal static string ValidaCuenta {
+        internal static string InsertaPunto {
             get {
-                return ResourceManager.GetString("ValidaCuenta", resourceCulture);
+                return ResourceManager.GetString("InsertaPunto", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a SELECT COUNT(Id_Usuario) AS EXISTE FROM USUARIO WHERE TRIM(Cui) = &apos;{0}&apos; AND Estado = &apos;A&apos;;.
+        ///   Busca una cadena traducida similar a SELECT Punto.Id_Punto_Atencion AS Id, Punto.Nombre_Punto_Atencion AS Nombre,
+        ///Region.Nombre_Region AS REGION, Punto.Estado AS ESTADO
+        ///FROM Punto_Atencion Punto
+        ///INNER JOIN Region Region
+        ///	ON Punto.Id_Region = Region.Id_Region
+        ///WHERE Punto.Estado = &apos;A&apos;.
         /// </summary>
-        internal static string ValidaCUIRepetido {
+        internal static string ObtienePuntos {
             get {
-                return ResourceManager.GetString("ValidaCUIRepetido", resourceCulture);
+                return ResourceManager.GetString("ObtienePuntos", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a SELECT COUNT(Id_Usuario) AS EXISTE FROM Usuario WHERE Usuario= &apos;{0}&apos; AND CAST(DECRYPTBYPASSPHRASE(&apos;JS0R&apos;,Pass) AS VARCHAR(MAX)) = &apos;{1}&apos;;.
+        ///   Busca una cadena traducida similar a SELECT Id_Region, Nombre_Region FROM Region WHERE Estado = &apos;A&apos;;.
         /// </summary>
-        internal static string ValidaExistenciaUsuario {
+        internal static string ObtieneRegiones {
             get {
-                return ResourceManager.GetString("ValidaExistenciaUsuario", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a SELECT COUNT(Id_Usuario) AS EXISTE FROM Usuario WHERE TRIM(Usuario) = &apos;{0}&apos; AND Estado = &apos;A&apos;;.
-        /// </summary>
-        internal static string ValidaUsuarioRepetido {
-            get {
-                return ResourceManager.GetString("ValidaUsuarioRepetido", resourceCulture);
+                return ResourceManager.GetString("ObtieneRegiones", resourceCulture);
             }
         }
     }

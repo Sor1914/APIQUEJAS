@@ -117,23 +117,24 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="InsertaUsuario" xml:space="preserve">
-    <value>INSERT INTO Usuario(Usuario, Pass, Nombres, Apellidos, Email, Cui, Departamento, Id_Rol, Id_Cargo, Id_Punto_Atencion, Estado)
-VALUES ('{0}',ENCRYPTBYPASSPHRASE('JS0R', '{1}' ),'{2}','{3}','{4}','{5}','{6}',{7},{8},{9},'{10}');</value>
+  <data name="InsertaPunto" xml:space="preserve">
+    <value>INSERT INTO Punto_Atencion(Nombre_Punto_Atencion, Id_Region, Estado) values ('{0}', {1}, '{2}');</value>
   </data>
-  <data name="ValidaCuenta" xml:space="preserve">
-    <value>SELECT COUNT(Id_Cuenta) AS EXISTE FROM Cuenta WHERE TRIM(Numero_Cuenta) = '{0}' AND ESTADO = 'A';</value>
+  <data name="ActualizaPunto" xml:space="preserve">
+    <value>UPDATE Punto_Atencion SET Nombre_Punto_Atencion = '{0}', Id_Region = {1} WHERE Id_Punto_Atencion = {2}</value>
   </data>
-  <data name="ValidaExistenciaUsuario" xml:space="preserve">
-    <value>SELECT COUNT(Id_Usuario) AS EXISTE FROM Usuario WHERE Usuario= '{0}' AND CAST(DECRYPTBYPASSPHRASE('JS0R',Pass) AS VARCHAR(MAX)) = '{1}';</value>
+  <data name="EliminaPunto" xml:space="preserve">
+    <value>UPDATE Punto_Atencion SET Estado = '{0}' WHERE Id_Punto_Atencion = {1}</value>
   </data>
-  <data name="ValidaCorreoRepetido" xml:space="preserve">
-    <value>SELECT COUNT(Id_Usuario) AS EXISTE FROM USUARIO WHERE TRIM(Email) = '{0}' AND Estado = 'A';</value>
+  <data name="ObtienePuntos" xml:space="preserve">
+    <value>SELECT Punto.Id_Punto_Atencion AS Id, Punto.Nombre_Punto_Atencion AS Nombre,
+Region.Nombre_Region AS REGION, Punto.Estado AS ESTADO
+FROM Punto_Atencion Punto
+INNER JOIN Region Region
+	ON Punto.Id_Region = Region.Id_Region
+WHERE Punto.Estado = 'A'</value>
   </data>
-  <data name="ValidaCUIRepetido" xml:space="preserve">
-    <value>SELECT COUNT(Id_Usuario) AS EXISTE FROM USUARIO WHERE TRIM(Cui) = '{0}' AND Estado = 'A';</value>
-  </data>
-  <data name="ValidaUsuarioRepetido" xml:space="preserve">
-    <value>SELECT COUNT(Id_Usuario) AS EXISTE FROM Usuario WHERE TRIM(Usuario) = '{0}' AND Estado = 'A';</value>
+  <data name="ObtieneRegiones" xml:space="preserve">
+    <value>SELECT Id_Region, Nombre_Region FROM Region WHERE Estado = 'A';</value>
   </data>
 </root>

@@ -28,11 +28,11 @@ namespace APIQUEJAS.Clases
         public bool validarUsuarioRepetido(string usuario, int tipo)
         {
             if (tipo == 1)
-                consulta = string.Format(sqlLogin.ValidarCorreoRepetido, usuario);
+                consulta = string.Format(sqlLogin.ValidaUsuarioRepetido, usuario);
             else if (tipo == 2)
-                consulta = string.Format(sqlLogin.ValidarUsuarioRepetido, usuario);
+                consulta = string.Format(sqlLogin.ValidaCorreoRepetido, usuario);
             else if (tipo == 3)
-                consulta = string.Format(sqlLogin.ValidarCUIRepetido, usuario);
+                consulta = string.Format(sqlLogin.ValidaCUIRepetido, usuario);
             else if (tipo == 4)
                 consulta = string.Format(sqlLogin.ValidaCuenta, usuario);
             dtResultado = _Ad.realizarConsulta(consulta);
