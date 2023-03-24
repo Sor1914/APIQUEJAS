@@ -1,0 +1,12 @@
+=============================================================================
+Login --> Hora: 09:29:21 --> Fecha: jueves, 23 de marzo de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 09:29:21 --> Fecha: jueves, 23 de marzo de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor2000"} 
+Autenticar
+
+Token generado --> Hora: 09:29:21 --> Fecha: jueves, 23 de marzo de 2023
+Método: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkpTT1IiLCJuYmYiOjE2Nzk1ODUzNjEsImV4cCI6MTY3OTU4Njg2MSwiaWF0IjoxNjc5NTg1MzYxLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjYyNjcxIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo2MjY3MSJ9.UkELOYw6U4aHbal0Mq2jqVfkWkQhAQfOXWyxK5XZRc0 usuario: JSOR 
+Autenticar
+
