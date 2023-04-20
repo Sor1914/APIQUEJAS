@@ -125,8 +125,9 @@ CREATE TABLE Detalle_Queja(
 CREATE TABLE Bitacora(
 	Id_Bitacora INT NOT NULL IDENTITY PRIMARY KEY,
 	Nombre_Tabla VARCHAR(15),
-	Campo_Antes VARCHAR(1000),
-	Campo_Despues VARCHAR(1000),
+	Registro_Antes VARCHAR(1000),
+	Registro_Despues VARCHAR(1000),
+	Tipo_Movimiento VARCHAR(15),
 	Usuario VARCHAR(15),
 	Email VARCHAR(50),
 	Fecha DATETIME DEFAULT CURRENT_TIMESTAMP,		

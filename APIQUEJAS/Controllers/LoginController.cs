@@ -111,6 +111,7 @@ namespace APIQUEJAS.Controllers
 
         public bool validarParametro(string valor)
         {
+            if (string.IsNullOrEmpty(valor)) return false;
             bool resultado = Regex.IsMatch(valor, @"^([a-z]|[A-Z]|[0-9]){4,20}$");
             return resultado;
         }

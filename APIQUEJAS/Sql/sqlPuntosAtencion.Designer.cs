@@ -79,6 +79,24 @@ namespace APIQUEJAS.Sql {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a AND UPPER(TRIM(Punto.Nombre_Punto_Atencion)) LIKE &apos;%{0}%&apos;.
+        /// </summary>
+        internal static string FiltroBusqueda {
+            get {
+                return ResourceManager.GetString("FiltroBusqueda", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a AND Region.Id_Region = &apos;{0}&apos;.
+        /// </summary>
+        internal static string FiltroRegion {
+            get {
+                return ResourceManager.GetString("FiltroRegion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a INSERT INTO Punto_Atencion(Nombre_Punto_Atencion, Id_Region, Estado) values (&apos;{0}&apos;, {1}, &apos;{2}&apos;);.
         /// </summary>
         internal static string InsertaPunto {
@@ -88,12 +106,13 @@ namespace APIQUEJAS.Sql {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a SELECT Punto.Id_Punto_Atencion AS Id, Punto.Nombre_Punto_Atencion AS Nombre,
-        ///Region.Nombre_Region AS REGION, Punto.Estado AS ESTADO
+        ///   Busca una cadena traducida similar a SELECT ROW_NUMBER() OVER(ORDER BY Id_Punto_Atencion) AS FILA, 
+        ///Punto.Id_Punto_Atencion, Punto.Nombre_Punto_Atencion, Region.Id_Region,
+        ///Region.Nombre_Region, Punto.Estado 
         ///FROM Punto_Atencion Punto
-        ///INNER JOIN Region Region
-        ///	ON Punto.Id_Region = Region.Id_Region
-        ///WHERE Punto.Estado = &apos;A&apos;.
+        ///	INNER JOIN Region Region
+        ///		ON Punto.Id_Region = Region.Id_Region
+        ///	WHERE Punto.Estado = &apos;A&apos;  {0} {1}.
         /// </summary>
         internal static string ObtienePuntos {
             get {

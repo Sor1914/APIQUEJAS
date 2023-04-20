@@ -1,0 +1,352 @@
+=============================================================================
+Login --> Hora: 17:05:00 --> Fecha: lunes, 17 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 17:05:00 --> Fecha: lunes, 17 de abril de 2023
+Método: {"Usuario":"JSOR1","Pass":null} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 17:05:14 --> Fecha: lunes, 17 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 17:05:14 --> Fecha: lunes, 17 de abril de 2023
+Método: {"Usuario":"JSOR1","Pass":"sadasdf"} 
+Autenticar
+
+Solicitud rechazada --> Hora: 17:05:14 --> Fecha: lunes, 17 de abril de 2023
+Método: No autorizado 
+Autenticar
+
+=============================================================================
+Login --> Hora: 17:05:18 --> Fecha: lunes, 17 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 17:05:18 --> Fecha: lunes, 17 de abril de 2023
+Método: {"Usuario":"JSOR1","Pass":"Jonathansor200066"} 
+Autenticar
+
+Solicitud rechazada --> Hora: 17:05:18 --> Fecha: lunes, 17 de abril de 2023
+Método: No autorizado 
+Autenticar
+
+=============================================================================
+Login --> Hora: 17:06:15 --> Fecha: lunes, 17 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 17:06:15 --> Fecha: lunes, 17 de abril de 2023
+Método: {"Usuario":"asdf","Pass":"asdf"} 
+Autenticar
+
+Solicitud rechazada --> Hora: 17:06:15 --> Fecha: lunes, 17 de abril de 2023
+Método: No autorizado 
+Autenticar
+
+=============================================================================
+Login --> Hora: 17:08:01 --> Fecha: lunes, 17 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 17:08:01 --> Fecha: lunes, 17 de abril de 2023
+Método: {"Usuario":"JSOR1","Pass":"Cofal7946"} 
+Autenticar
+
+Solicitud rechazada --> Hora: 17:08:01 --> Fecha: lunes, 17 de abril de 2023
+Método: No autorizado 
+Autenticar
+
+=============================================================================
+Login --> Hora: 17:08:32 --> Fecha: lunes, 17 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 17:08:32 --> Fecha: lunes, 17 de abril de 2023
+Método: {"Usuario":"JSOR1","Pass":null} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 17:11:22 --> Fecha: lunes, 17 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 17:11:22 --> Fecha: lunes, 17 de abril de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor20006"} 
+Autenticar
+
+Solicitud rechazada --> Hora: 17:11:22 --> Fecha: lunes, 17 de abril de 2023
+Método: No autorizado 
+Autenticar
+
+=============================================================================
+Login --> Hora: 17:11:40 --> Fecha: lunes, 17 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 17:11:40 --> Fecha: lunes, 17 de abril de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor200066"} 
+Autenticar
+
+Token generado --> Hora: 17:11:40 --> Fecha: lunes, 17 de abril de 2023
+Método: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkpTT1IiLCJuYmYiOjE2ODE3NzMxMDAsImV4cCI6MTY4MTc3NDYwMCwiaWF0IjoxNjgxNzczMTAwLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjYyNjcxIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo2MjY3MSJ9.20nHjQ6BKQGohxMjTekXNTREHE0a20H7dWivXhKEK0g usuario: JSOR 
+Autenticar
+
+=============================================================================
+Login --> Hora: 17:15:58 --> Fecha: lunes, 17 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 17:15:58 --> Fecha: lunes, 17 de abril de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor200066"} 
+Autenticar
+
+Token generado --> Hora: 17:15:59 --> Fecha: lunes, 17 de abril de 2023
+Método: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkpTT1IiLCJuYmYiOjE2ODE3NzMzNTgsImV4cCI6MTY4MTc3NDg1OCwiaWF0IjoxNjgxNzczMzU4LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjYyNjcxIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo2MjY3MSJ9.cdrqOLcsPR2j6TsARY2Bf2oSnnEC5-xSsnR1QqcVj4A usuario: JSOR 
+Autenticar
+
+=============================================================================
+Login --> Hora: 17:17:32 --> Fecha: lunes, 17 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 17:17:32 --> Fecha: lunes, 17 de abril de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor200"} 
+Autenticar
+
+Solicitud rechazada --> Hora: 17:17:32 --> Fecha: lunes, 17 de abril de 2023
+Método: No autorizado 
+Autenticar
+
+=============================================================================
+Login --> Hora: 17:18:16 --> Fecha: lunes, 17 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 17:18:16 --> Fecha: lunes, 17 de abril de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor20006"} 
+Autenticar
+
+Solicitud rechazada --> Hora: 17:18:16 --> Fecha: lunes, 17 de abril de 2023
+Método: No autorizado 
+Autenticar
+
+=============================================================================
+Login --> Hora: 17:18:28 --> Fecha: lunes, 17 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 17:18:28 --> Fecha: lunes, 17 de abril de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor200066"} 
+Autenticar
+
+Token generado --> Hora: 17:18:28 --> Fecha: lunes, 17 de abril de 2023
+Método: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkpTT1IiLCJuYmYiOjE2ODE3NzM1MDgsImV4cCI6MTY4MTc3NTAwOCwiaWF0IjoxNjgxNzczNTA4LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjYyNjcxIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo2MjY3MSJ9.PDoClOPPt76fpysYTpW8RPq72zLXX7Cdptk_TAYkOJc usuario: JSOR 
+Autenticar
+
+=============================================================================
+Login --> Hora: 17:22:02 --> Fecha: lunes, 17 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 17:22:02 --> Fecha: lunes, 17 de abril de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor200066"} 
+Autenticar
+
+Token generado --> Hora: 17:22:02 --> Fecha: lunes, 17 de abril de 2023
+Método: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkpTT1IiLCJuYmYiOjE2ODE3NzM3MjIsImV4cCI6MTY4MTc3NTIyMiwiaWF0IjoxNjgxNzczNzIyLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjYyNjcxIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo2MjY3MSJ9.zVrp9Ng2Vqxbwyzt7NH8TZcFUaXKD_-xmiVCcgBCTfE usuario: JSOR 
+Autenticar
+
+=============================================================================
+Login --> Hora: 17:27:13 --> Fecha: lunes, 17 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 17:27:13 --> Fecha: lunes, 17 de abril de 2023
+Método: {"Usuario":"JSOR1","Pass":"Jonathansor200066"} 
+Autenticar
+
+Solicitud rechazada --> Hora: 17:27:13 --> Fecha: lunes, 17 de abril de 2023
+Método: No autorizado 
+Autenticar
+
+=============================================================================
+Login --> Hora: 17:27:19 --> Fecha: lunes, 17 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 17:27:19 --> Fecha: lunes, 17 de abril de 2023
+Método: {"Usuario":"JSOR1","Pass":"RyabMEjEMr7khDN"} 
+Autenticar
+
+Solicitud rechazada --> Hora: 17:27:19 --> Fecha: lunes, 17 de abril de 2023
+Método: No autorizado 
+Autenticar
+
+=============================================================================
+Login --> Hora: 17:27:24 --> Fecha: lunes, 17 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 17:27:24 --> Fecha: lunes, 17 de abril de 2023
+Método: {"Usuario":"JSOR1","Pass":"Jonathansor200066sm"} 
+Autenticar
+
+Solicitud rechazada --> Hora: 17:27:24 --> Fecha: lunes, 17 de abril de 2023
+Método: No autorizado 
+Autenticar
+
+=============================================================================
+Login --> Hora: 17:28:04 --> Fecha: lunes, 17 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 17:28:04 --> Fecha: lunes, 17 de abril de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor200066"} 
+Autenticar
+
+Token generado --> Hora: 17:28:04 --> Fecha: lunes, 17 de abril de 2023
+Método: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkpTT1IiLCJuYmYiOjE2ODE3NzQwODQsImV4cCI6MTY4MTc3NTU4NCwiaWF0IjoxNjgxNzc0MDg0LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjYyNjcxIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo2MjY3MSJ9.AS-BVZtSqiNcQWVOlybvlC-Uqnz6W2ifeldLlZeaTbk usuario: JSOR 
+Autenticar
+
+=============================================================================
+Login --> Hora: 17:31:39 --> Fecha: lunes, 17 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 17:31:39 --> Fecha: lunes, 17 de abril de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor200066"} 
+Autenticar
+
+Token generado --> Hora: 17:31:39 --> Fecha: lunes, 17 de abril de 2023
+Método: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkpTT1IiLCJuYmYiOjE2ODE3NzQyOTksImV4cCI6MTY4MTc3NTc5OSwiaWF0IjoxNjgxNzc0Mjk5LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjYyNjcxIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo2MjY3MSJ9.cp2wBg0YnMGDTkzEz7HAdc4rNeq-SJtmSAnMo-3aIq8 usuario: JSOR 
+Autenticar
+
+=============================================================================
+Login --> Hora: 17:47:22 --> Fecha: lunes, 17 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 17:47:22 --> Fecha: lunes, 17 de abril de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor200066"} 
+Autenticar
+
+Token generado --> Hora: 17:47:22 --> Fecha: lunes, 17 de abril de 2023
+Método: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkpTT1IiLCJuYmYiOjE2ODE3NzUyNDIsImV4cCI6MTY4MTc3Njc0MiwiaWF0IjoxNjgxNzc1MjQyLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjYyNjcxIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo2MjY3MSJ9.X_ts-FtJ6TT9d0rHBs6sWm3lZRVyi_jS1vW09YkXVkY usuario: JSOR 
+Autenticar
+
+=============================================================================
+Login --> Hora: 18:02:48 --> Fecha: lunes, 17 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 18:02:48 --> Fecha: lunes, 17 de abril de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor200066"} 
+Autenticar
+
+Token generado --> Hora: 18:02:48 --> Fecha: lunes, 17 de abril de 2023
+Método: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkpTT1IiLCJuYmYiOjE2ODE3NzYxNjgsImV4cCI6MTY4MTc3NzY2OCwiaWF0IjoxNjgxNzc2MTY4LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjYyNjcxIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo2MjY3MSJ9.PSgrRaPXJPCPAt5qyvHW7znCC3yE6-qfOC5Z53miVL8 usuario: JSOR 
+Autenticar
+
+=============================================================================
+Login --> Hora: 18:11:44 --> Fecha: lunes, 17 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 18:11:44 --> Fecha: lunes, 17 de abril de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor1200066"} 
+Autenticar
+
+Solicitud rechazada --> Hora: 18:11:44 --> Fecha: lunes, 17 de abril de 2023
+Método: No autorizado 
+Autenticar
+
+=============================================================================
+Login --> Hora: 18:11:49 --> Fecha: lunes, 17 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 18:11:49 --> Fecha: lunes, 17 de abril de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor200066"} 
+Autenticar
+
+Token generado --> Hora: 18:11:49 --> Fecha: lunes, 17 de abril de 2023
+Método: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkpTT1IiLCJuYmYiOjE2ODE3NzY3MDksImV4cCI6MTY4MTc3ODIwOSwiaWF0IjoxNjgxNzc2NzA5LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjYyNjcxIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo2MjY3MSJ9.ZeiOhV_fd9lY-I14S7o667ywn5dye6mF6WMfsrfSdyY usuario: JSOR 
+Autenticar
+
+=============================================================================
+Login --> Hora: 18:17:18 --> Fecha: lunes, 17 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 18:17:18 --> Fecha: lunes, 17 de abril de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor200066"} 
+Autenticar
+
+Token generado --> Hora: 18:17:18 --> Fecha: lunes, 17 de abril de 2023
+Método: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkpTT1IiLCJuYmYiOjE2ODE3NzcwMzgsImV4cCI6MTY4MTc3ODUzOCwiaWF0IjoxNjgxNzc3MDM4LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjYyNjcxIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo2MjY3MSJ9.C7oneq2R-lE5Txmm8QxVPgpQMUMdtwOLw9crfxlqmh8 usuario: JSOR 
+Autenticar
+
+=============================================================================
+Login --> Hora: 18:18:07 --> Fecha: lunes, 17 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 18:18:07 --> Fecha: lunes, 17 de abril de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor200066"} 
+Autenticar
+
+Token generado --> Hora: 18:18:07 --> Fecha: lunes, 17 de abril de 2023
+Método: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkpTT1IiLCJuYmYiOjE2ODE3NzcwODcsImV4cCI6MTY4MTc3ODU4NywiaWF0IjoxNjgxNzc3MDg3LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjYyNjcxIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo2MjY3MSJ9.LTBKKFbvENsIKKW6kgcnKGcsd8St-c6QD07qwLy_Nc4 usuario: JSOR 
+Autenticar
+
+=============================================================================
+Login --> Hora: 18:19:45 --> Fecha: lunes, 17 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 18:19:45 --> Fecha: lunes, 17 de abril de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor200066"} 
+Autenticar
+
+Token generado --> Hora: 18:19:45 --> Fecha: lunes, 17 de abril de 2023
+Método: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkpTT1IiLCJuYmYiOjE2ODE3NzcxODUsImV4cCI6MTY4MTc3ODY4NSwiaWF0IjoxNjgxNzc3MTg1LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjYyNjcxIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo2MjY3MSJ9.kxd1thKtlVCCuq_3lItKI4AjjpGNLADlYmgmM6NFCAQ usuario: JSOR 
+Autenticar
+
+=============================================================================
+Login --> Hora: 18:24:05 --> Fecha: lunes, 17 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 18:24:05 --> Fecha: lunes, 17 de abril de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor200066"} 
+Autenticar
+
+Token generado --> Hora: 18:24:06 --> Fecha: lunes, 17 de abril de 2023
+Método: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkpTT1IiLCJuYmYiOjE2ODE3Nzc0NDYsImV4cCI6MTY4MTc3ODk0NiwiaWF0IjoxNjgxNzc3NDQ2LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjYyNjcxIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo2MjY3MSJ9.v_AFnru0j-UovteXA87XnIOhmfKiDZFHvRvspxW_fj4 usuario: JSOR 
+Autenticar
+
+=============================================================================
+Login --> Hora: 18:34:47 --> Fecha: lunes, 17 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 18:34:47 --> Fecha: lunes, 17 de abril de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor200066"} 
+Autenticar
+
+Token generado --> Hora: 18:34:47 --> Fecha: lunes, 17 de abril de 2023
+Método: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkpTT1IiLCJuYmYiOjE2ODE3NzgwODcsImV4cCI6MTY4MTc3OTU4NywiaWF0IjoxNjgxNzc4MDg3LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjYyNjcxIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo2MjY3MSJ9.366w6GX8K2RmbIlbYt8saGI_monM4t-CIjYREPGjpDI usuario: JSOR 
+Autenticar
+
+=============================================================================
+Login --> Hora: 18:39:20 --> Fecha: lunes, 17 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 18:39:20 --> Fecha: lunes, 17 de abril de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor200066"} 
+Autenticar
+
+Token generado --> Hora: 18:39:20 --> Fecha: lunes, 17 de abril de 2023
+Método: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkpTT1IiLCJuYmYiOjE2ODE3NzgzNjAsImV4cCI6MTY4MTc3OTg2MCwiaWF0IjoxNjgxNzc4MzYwLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjYyNjcxIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo2MjY3MSJ9.G81oVbSlQg8ZB7wuJS1GTfyOvBEH8QI9Od53O1oCiP8 usuario: JSOR 
+Autenticar
+
+=============================================================================
+Login --> Hora: 18:45:15 --> Fecha: lunes, 17 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 18:45:15 --> Fecha: lunes, 17 de abril de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor200066"} 
+Autenticar
+
+Token generado --> Hora: 18:45:15 --> Fecha: lunes, 17 de abril de 2023
+Método: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkpTT1IiLCJuYmYiOjE2ODE3Nzg3MTUsImV4cCI6MTY4MTc4MDIxNSwiaWF0IjoxNjgxNzc4NzE1LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjYyNjcxIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo2MjY3MSJ9.wAkPN-Yl2is5oBYgHzftkVEoZFmOXjTZQmEDQcClza8 usuario: JSOR 
+Autenticar
+
+=============================================================================
+Login --> Hora: 18:50:03 --> Fecha: lunes, 17 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 18:50:03 --> Fecha: lunes, 17 de abril de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor200066"} 
+Autenticar
+
+Token generado --> Hora: 18:50:03 --> Fecha: lunes, 17 de abril de 2023
+Método: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkpTT1IiLCJuYmYiOjE2ODE3NzkwMDMsImV4cCI6MTY4MTc4MDUwMywiaWF0IjoxNjgxNzc5MDAzLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjYyNjcxIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo2MjY3MSJ9.qGhJDlxJ8Fi0AI0FjjIDf4wiVCkD3zAWKaq3Gn_5gmA usuario: JSOR 
+Autenticar
+

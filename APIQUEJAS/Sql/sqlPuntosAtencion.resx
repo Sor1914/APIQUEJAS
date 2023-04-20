@@ -127,14 +127,21 @@
     <value>UPDATE Punto_Atencion SET Estado = '{0}' WHERE Id_Punto_Atencion = {1}</value>
   </data>
   <data name="ObtienePuntos" xml:space="preserve">
-    <value>SELECT Punto.Id_Punto_Atencion AS Id, Punto.Nombre_Punto_Atencion AS Nombre,
-Region.Nombre_Region AS REGION, Punto.Estado AS ESTADO
+    <value>SELECT ROW_NUMBER() OVER(ORDER BY Id_Punto_Atencion) AS FILA, 
+Punto.Id_Punto_Atencion, Punto.Nombre_Punto_Atencion, Region.Id_Region,
+Region.Nombre_Region, Punto.Estado 
 FROM Punto_Atencion Punto
-INNER JOIN Region Region
-	ON Punto.Id_Region = Region.Id_Region
-WHERE Punto.Estado = 'A'</value>
+	INNER JOIN Region Region
+		ON Punto.Id_Region = Region.Id_Region
+	WHERE Punto.Estado = 'A'  {0} {1}</value>
   </data>
   <data name="ObtieneRegiones" xml:space="preserve">
     <value>SELECT Id_Region, Nombre_Region FROM Region WHERE Estado = 'A';</value>
+  </data>
+  <data name="FiltroRegion" xml:space="preserve">
+    <value>AND Region.Id_Region = '{0}'</value>
+  </data>
+  <data name="FiltroBusqueda" xml:space="preserve">
+    <value>AND UPPER(TRIM(Punto.Nombre_Punto_Atencion)) LIKE '%{0}%'</value>
   </data>
 </root>

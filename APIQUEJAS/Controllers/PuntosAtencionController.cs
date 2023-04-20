@@ -88,9 +88,9 @@ namespace APIQUEJAS.Controllers
             }
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("ObtenerPuntos")]
-        public IHttpActionResult obtenerPuntosAtencion()
+        public IHttpActionResult obtenerPuntosAtencion(PuntoAtencion Punto)
         {
             if (!ModelState.IsValid)
             {
@@ -99,8 +99,10 @@ namespace APIQUEJAS.Controllers
                    Request.CreateErrorResponse(HttpStatusCode.BadRequest, message));
             }
             try
-            {
-                DataTable dtResultado = _Consultas.obtenerPuntos();
+            {                
+                DataTable dtResultado = _Consultas.obtenerPuntos(Punto);
+           
+
                 if (dtResultado.Rows.Count > 0)
                     return Content(HttpStatusCode.Found, dtResultado);
                 else

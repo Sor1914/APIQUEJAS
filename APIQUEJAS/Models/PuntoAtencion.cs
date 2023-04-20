@@ -11,5 +11,8 @@ namespace APIQUEJAS.Models
         public string NombrePuntoAtencion { get; set; }
         public int IdRegion { get; set; }
         public string Estado { get; set; }
+        public int inicio { get; set; }
+        public int final { get; set; }
+        public string busqueda { get; set; }
     }
 }

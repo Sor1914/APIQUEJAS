@@ -36,9 +36,15 @@ namespace APIQUEJAS.Clases
             return respuesta;
         }
 
-        public DataTable obtenerPuntos()
+        public DataTable obtenerPuntos(PuntoAtencion punto)
         {
-            consulta = string.Format(sqlPuntosAtencion.ObtienePuntos);
+            string filtroRegion = "";
+            string filtroBusqueda = "";
+            if(punto.IdRegion != 0)            
+                filtroRegion = string.Format(sqlPuntosAtencion.FiltroRegion, punto.IdRegion);            
+            if (!string.IsNullOrEmpty(punto.busqueda))            
+                filtroBusqueda = string.Format(sqlPuntosAtencion.FiltroBusqueda, punto.busqueda.Trim().ToUpper());            
+            consulta = string.Format(sqlPuntosAtencion.ObtienePuntos, filtroRegion, filtroBusqueda);
             dtResultado = _Ad.realizarConsulta(consulta);
             return dtResultado;
         }
