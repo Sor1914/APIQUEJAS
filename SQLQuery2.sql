@@ -19,7 +19,15 @@ CREATE TABLE Rol(
 	Estado VARCHAR(1) DEFAULT 'A'
 );
 
-INSERT INTO Rol(Nombre_Rol, Estado) VALUES ('GENERICO', 'A');
+INSERT INTO Rol(Nombre_Rol, Estado) VALUES ('ADMINISTRADOR', 'A');
+INSERT INTO Rol(Nombre_Rol, Estado) VALUES ('CENTRALIZADOR', 'A');
+INSERT INTO Rol(Nombre_Rol, Estado) VALUES ('RECEPTOR', 'A');
+INSERT INTO Rol(Nombre_Rol, Estado) VALUES ('CUENTAHABIENTE', 'A');
+INSERT INTO Rol(Nombre_Rol, Estado) VALUES ('CONSULTA', 'A');
+
+
+SELECT ID_ROL FROM USUARIO WHERE USUARIO = '{0}'
+
 
 CREATE TABLE Cargo(
 	Id_Area INT NOT NULL IDENTITY PRIMARY KEY,
@@ -27,7 +35,7 @@ CREATE TABLE Cargo(
 	Estado VARCHAR(1) DEFAULT 'A'
 );
 
-INSERT INTO Cargo(Nombre_Cargo, Estado) VALUES ('CLIENTE','A');
+INSERT INTO Cargo(Nombre_Cargo, Estado) VALUES ('ADMINISTRADOR','A');
 
 
 CREATE TABLE Cuenta(
@@ -37,7 +45,7 @@ CREATE TABLE Cuenta(
 	Estado VARCHAR(1) DEFAULT 'A'
 );
 
-INSERT INTO Cuenta(Tipo_Cuenta, Numero_Cuenta, Estado) VALUES('AHO','123456','A');
+INSERT INTO Cuenta(Tipo_Cuenta, Numero_Cuenta, Estado) VALUES('AHO','123','A');
 
 CREATE TABLE Region(
 	Id_Region INT NOT NULL IDENTITY PRIMARY KEY,
@@ -45,17 +53,22 @@ CREATE TABLE Region(
 	Estado VARCHAR(1) DEFAULT 'A'
 );
 
-INSERT INTO Region(Nombre_Region, Estado) VALUES ('PRUEBA', 'A');
+INSERT INTO Region(Nombre_Region, Estado) VALUES ('CENTRAL', 'A');
+INSERT INTO Region(Nombre_Region, Estado) VALUES ('SUR', 'A');
+INSERT INTO Region(Nombre_Region, Estado) VALUES ('NORORIENTE', 'A');
+INSERT INTO Region(Nombre_Region, Estado) VALUES ('OCCIDENTE', 'A');
 
+
+select * from Punto_Atencion
 CREATE TABLE Punto_Atencion(
 	Id_Punto_Atencion INT NOT NULL IDENTITY PRIMARY KEY,
-	Nombre_Punto_Atencion VARCHAR (15),
+	Nombre_Punto_Atencion VARCHAR (50),
 	Id_Region INT FOREIGN KEY REFERENCES Region(Id_Region),
 	Estado VARCHAR(1) DEFAULT 'A'
 );
 
-INSERT INTO Punto_Atencion (Nombre_Punto_Atencion, Id_Region, Estado)
-VALUES ('NoAsignado', 1, 'A');
+INSERT INTO Punto_Atencion(Nombre_Punto_Atencion, Id_Region, Estado)
+Values('NA', 1, 'A')
 
 CREATE TABLE Usuario(
      Id_Usuario int NOT NULL IDENTITY PRIMARY KEY,	 
@@ -136,3 +149,41 @@ CREATE TABLE Bitacora(
 
 
 
+INSERT INTO Usuario(Usuario, Pass, Nombres, Apellidos, Email, Cui, Departamento, Id_Rol, Id_Cargo, Id_Punto_Atencion, Estado)
+VALUES ('JSOR',ENCRYPTBYPASSPHRASE('JS0R', 'Jonathansor200066' ),'Jonathan','Sor','Jonathansor2000sm@gmail.com','3034719480109','Guatemala',1,1,1,'A');
+
+
+
+
+select * FROM ROl
+
+SELECT ID_ROL AS ID, nom AS NOMBRE FROM  USUARIO WHERE USUARIO = 'JSOR'
+
+
+SELECT USUARIO.ID_ROL AS ID, ROL.Nombre_Rol AS NOMBRE FROM USUARIO
+INNER JOIN ROL	
+	ON USUARIO.ID_ROL = ROL.Id_Rol
+WHERE USUARIO = '{0}'
+
+SELECT USUARIO.ID_ROL AS ID, ROL.Nombre_Rol AS NOMBRE FROM USUARIO
+INNER JOIN ROL	
+	ON USUARIO.ID_ROL = ROL.Id_Rol
+WHERE USUARIO = 'JSOR'
+
+
+SELECT * FROM USUARIO
+
+DELETE USUARIO WHERE Id_Usuario in (8,9,10,11)
+
+select * from rol
+
+UPDATE USUARIO SET Id_Punto_Atencion = 8 WHERE Id_Usuario=14
+
+select * from Punto_Atencion
+
+
+SELECT COUNT(ID_PUNTO_ATENCION) FROM USUARIO WHERE Id_Punto_Atencion = {0}
+
+UPDATE Usuario SET Estado = 'I' WHERE Id_Punto_Atencion = {0}
+
+UPDATE USUARIO SET ESTADO = 'A'

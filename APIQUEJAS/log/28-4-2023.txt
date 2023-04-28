@@ -1,0 +1,308 @@
+=============================================================================
+Login --> Hora: 07:53:12 --> Fecha: viernes, 28 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 07:53:12 --> Fecha: viernes, 28 de abril de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 11:46:44 --> Fecha: viernes, 28 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 11:46:44 --> Fecha: viernes, 28 de abril de 2023
+Método: {"Usuario":"CENTRALIZADOR","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
+Autenticar
+
+Solicitud rechazada --> Hora: 11:46:44 --> Fecha: viernes, 28 de abril de 2023
+Método: No autorizado 
+Autenticar
+
+=============================================================================
+Login --> Hora: 11:46:46 --> Fecha: viernes, 28 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 11:46:46 --> Fecha: viernes, 28 de abril de 2023
+Método: {"Usuario":"CENTRALIZADOR","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
+Autenticar
+
+Solicitud rechazada --> Hora: 11:46:46 --> Fecha: viernes, 28 de abril de 2023
+Método: No autorizado 
+Autenticar
+
+=============================================================================
+Login --> Hora: 11:46:52 --> Fecha: viernes, 28 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 11:46:52 --> Fecha: viernes, 28 de abril de 2023
+Método: {"Usuario":"CENTRALIZADOR","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
+Autenticar
+
+Solicitud rechazada --> Hora: 11:46:52 --> Fecha: viernes, 28 de abril de 2023
+Método: No autorizado 
+Autenticar
+
+=============================================================================
+Login --> Hora: 11:59:00 --> Fecha: viernes, 28 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 11:59:00 --> Fecha: viernes, 28 de abril de 2023
+Método: {"Usuario":"CUENTAHABIENTE","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 12:01:24 --> Fecha: viernes, 28 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 12:01:24 --> Fecha: viernes, 28 de abril de 2023
+Método: {"Usuario":"CUENTAHABIENTE","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 12:05:41 --> Fecha: viernes, 28 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 12:05:41 --> Fecha: viernes, 28 de abril de 2023
+Método: {"Usuario":"CUENTAHABIENTE","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 12:12:14 --> Fecha: viernes, 28 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 12:12:14 --> Fecha: viernes, 28 de abril de 2023
+Método: {"Usuario":"CUENTAHABIENTE","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 12:12:20 --> Fecha: viernes, 28 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 12:12:20 --> Fecha: viernes, 28 de abril de 2023
+Método: {"Usuario":"CENTRALIZADOR","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 12:12:26 --> Fecha: viernes, 28 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 12:12:26 --> Fecha: viernes, 28 de abril de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 12:12:31 --> Fecha: viernes, 28 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 12:12:31 --> Fecha: viernes, 28 de abril de 2023
+Método: {"Usuario":"CENTRALIZADOR","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 12:12:36 --> Fecha: viernes, 28 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 12:12:36 --> Fecha: viernes, 28 de abril de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 12:19:06 --> Fecha: viernes, 28 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 12:19:06 --> Fecha: viernes, 28 de abril de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 12:19:11 --> Fecha: viernes, 28 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 12:19:11 --> Fecha: viernes, 28 de abril de 2023
+Método: {"Usuario":"CENTRALIZADOR","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 12:19:35 --> Fecha: viernes, 28 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 12:19:35 --> Fecha: viernes, 28 de abril de 2023
+Método: {"Usuario":"CENTRALIZADOR","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 12:19:45 --> Fecha: viernes, 28 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 12:19:45 --> Fecha: viernes, 28 de abril de 2023
+Método: {"Usuario":"RECEPTOR","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 12:19:55 --> Fecha: viernes, 28 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 12:19:55 --> Fecha: viernes, 28 de abril de 2023
+Método: {"Usuario":"CUENTAHABIENTE","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 12:20:01 --> Fecha: viernes, 28 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 12:20:01 --> Fecha: viernes, 28 de abril de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 12:29:08 --> Fecha: viernes, 28 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 12:29:08 --> Fecha: viernes, 28 de abril de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 14:05:51 --> Fecha: viernes, 28 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 14:05:51 --> Fecha: viernes, 28 de abril de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 14:13:24 --> Fecha: viernes, 28 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 14:13:24 --> Fecha: viernes, 28 de abril de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 14:14:06 --> Fecha: viernes, 28 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 14:14:06 --> Fecha: viernes, 28 de abril de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 14:16:59 --> Fecha: viernes, 28 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 14:16:59 --> Fecha: viernes, 28 de abril de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 14:21:32 --> Fecha: viernes, 28 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 14:21:32 --> Fecha: viernes, 28 de abril de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 14:22:47 --> Fecha: viernes, 28 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 14:22:47 --> Fecha: viernes, 28 de abril de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 14:33:55 --> Fecha: viernes, 28 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 14:33:55 --> Fecha: viernes, 28 de abril de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 14:36:44 --> Fecha: viernes, 28 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 14:36:44 --> Fecha: viernes, 28 de abril de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 15:38:03 --> Fecha: viernes, 28 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 15:38:03 --> Fecha: viernes, 28 de abril de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 15:40:47 --> Fecha: viernes, 28 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 15:40:47 --> Fecha: viernes, 28 de abril de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 15:46:53 --> Fecha: viernes, 28 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 15:46:53 --> Fecha: viernes, 28 de abril de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 15:47:41 --> Fecha: viernes, 28 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 15:47:41 --> Fecha: viernes, 28 de abril de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 15:54:14 --> Fecha: viernes, 28 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 15:54:14 --> Fecha: viernes, 28 de abril de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 16:08:05 --> Fecha: viernes, 28 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 16:08:05 --> Fecha: viernes, 28 de abril de 2023
+Método: {"Usuario":"CUENTAHABIENTE","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 16:08:11 --> Fecha: viernes, 28 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 16:08:11 --> Fecha: viernes, 28 de abril de 2023
+Método: {"Usuario":"RECEPTOR","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 16:08:15 --> Fecha: viernes, 28 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 16:08:15 --> Fecha: viernes, 28 de abril de 2023
+Método: {"Usuario":"RECEPTOR","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 16:08:33 --> Fecha: viernes, 28 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 16:08:33 --> Fecha: viernes, 28 de abril de 2023
+Método: {"Usuario":"CENTRALIZADOR","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 16:08:41 --> Fecha: viernes, 28 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 16:08:41 --> Fecha: viernes, 28 de abril de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
+Autenticar
+

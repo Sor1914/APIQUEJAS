@@ -11,7 +11,7 @@ using System.Web.Http;
 
 namespace APIQUEJAS.Controllers
 {
-    [Authorize]
+    [Authorize(Roles = "ADMINISTRADOR")]
     [RoutePrefix("API/PUNTOSATENCION")]
     public class PuntosAtencionController : ApiController
     {
@@ -34,10 +34,11 @@ namespace APIQUEJAS.Controllers
                     return Content(HttpStatusCode.Created, Punto.NombrePuntoAtencion);
                 else
                     return Content(HttpStatusCode.InternalServerError, "Hubo un error");
-            } catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 return Content(HttpStatusCode.InternalServerError, ex.Message);
-            }            
+            }
         }
 
         [HttpPost]
@@ -87,7 +88,6 @@ namespace APIQUEJAS.Controllers
                 return Content(HttpStatusCode.InternalServerError, ex.Message);
             }
         }
-
         [HttpPost]
         [Route("ObtenerPuntos")]
         public IHttpActionResult obtenerPuntosAtencion(PuntoAtencion Punto)
@@ -99,14 +99,59 @@ namespace APIQUEJAS.Controllers
                    Request.CreateErrorResponse(HttpStatusCode.BadRequest, message));
             }
             try
-            {                
+            {
                 DataTable dtResultado = _Consultas.obtenerPuntos(Punto);
-           
+
 
                 if (dtResultado.Rows.Count > 0)
                     return Content(HttpStatusCode.Found, dtResultado);
                 else
                     return Content(HttpStatusCode.NotFound, "No existen registros");
+            }
+            catch (Exception ex)
+            {
+                mensaje = ex.Message;
+                return Content(HttpStatusCode.InternalServerError, mensaje);
+            }
+        }
+
+        [HttpPost]
+        [Route("ContarUsuariosPunto")]
+        public IHttpActionResult contarUsuariosPunto(PuntoAtencion Punto)
+        {
+            if (!ModelState.IsValid)
+            {
+                var message = string.Format("Verifique todos los parámetros de entrada.");
+                throw new HttpResponseException(
+                   Request.CreateErrorResponse(HttpStatusCode.BadRequest, message));
+            }
+            try
+            {
+                Punto.cantidadUsuarios = _Consultas.contarUsuariosPunto(Punto);
+                return Content(HttpStatusCode.Found, Punto);
+            }
+            catch (Exception ex)
+            {
+                mensaje = ex.Message;
+                return Content(HttpStatusCode.InternalServerError, mensaje);
+            }
+        }
+
+        [HttpPost]
+        [Route("InactivarUsuariosPunto")]
+        public IHttpActionResult inhabilitarUsuariosPunto(PuntoAtencion Punto)
+        {
+            if (!ModelState.IsValid)
+            {
+                var message = string.Format("Verifique todos los parámetros de entrada.");
+                throw new HttpResponseException(
+                   Request.CreateErrorResponse(HttpStatusCode.BadRequest, message));
+            }
+            try
+            {
+                bool respuesta = _Consultas.inactivarUsuariosPunto(Punto);
+                if (respuesta) return Ok();
+                else return Content(HttpStatusCode.InternalServerError, "No se pudo inactivar los usuarios");
             }
             catch (Exception ex)
             {

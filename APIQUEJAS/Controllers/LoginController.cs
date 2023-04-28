@@ -17,6 +17,7 @@ namespace APIQUEJAS.Controllers
     [RoutePrefix("API/LOGIN")]
     public class LoginController : ApiController
     {
+        clsPermisos _Permisos = new clsPermisos();
         clsLogin _Consultas = new clsLogin();
         clsLog _Log = new clsLog();
         /*
@@ -38,9 +39,17 @@ namespace APIQUEJAS.Controllers
 
             if (existe)
             {
-                var token = TokenGenerator.GeneraTokenJwt(login.Usuario);
-                _Log.guardarBitacoraCuerpo("Token generado", "Autenticar", token + " usuario: " + login.Usuario.Trim());
-                return Ok(token);
+                string[] rol = _Permisos.obtenerRol(login.Usuario);
+                if (rol!= null)
+                {
+                    login.Token = TokenGenerator.GeneraTokenJwt(login.Usuario, rol[1]);
+                    login.permisos = _Permisos.obtenerPermisos(Convert.ToInt32(rol[0]));
+                    //_Log.guardarBitacoraCuerpo("Token generado", "Autenticar", login + " usuario: " + login.Usuario.Trim());
+                    return Ok(login);
+                } else
+                {
+                    return Unauthorized();
+                }                
             }
             else
             {
@@ -108,7 +117,6 @@ namespace APIQUEJAS.Controllers
             }
             
         }
-
         public bool validarParametro(string valor)
         {
             if (string.IsNullOrEmpty(valor)) return false;

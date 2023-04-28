@@ -5,6 +5,7 @@ using System.Configuration;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Security.Claims;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Web;
@@ -49,6 +50,7 @@ namespace APIQUEJAS.Security
 
                 SecurityToken securityToken;
                 var tokenHandler = new System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler();
+                var roleClaim = new Claim("role", "administrador");
                 TokenValidationParameters validationParameters = new TokenValidationParameters()
                 {
                     ValidAudience = audienceToken,
@@ -56,16 +58,16 @@ namespace APIQUEJAS.Security
                     ValidateLifetime = true,
                     ValidateIssuerSigningKey = true,
                     LifetimeValidator = this.LifetimeValidator,
-                    IssuerSigningKey = securityKey
+                    IssuerSigningKey = securityKey,                    
                 };
-
                 // Extract and assign Current Principal and user
                 Thread.CurrentPrincipal = tokenHandler.ValidateToken(token, validationParameters, out securityToken);
                 HttpContext.Current.User = tokenHandler.ValidateToken(token, validationParameters, out securityToken);
-
+                string xd = Thread.CurrentPrincipal.Identity.Name;
+                bool xdb = Thread.CurrentPrincipal.IsInRole("administrador");
                 return base.SendAsync(request, cancellationToken);
             }
-            catch (SecurityTokenValidationException)
+            catch (SecurityTokenValidationException ex)
             {
                 statusCode = HttpStatusCode.Unauthorized;
                 messageError = "Se ha denegado la autorización para esta solicitud.";

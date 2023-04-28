@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="InsertaPunto" xml:space="preserve">
-    <value>INSERT INTO Punto_Atencion(Nombre_Punto_Atencion, Id_Region, Estado) values ('{0}', {1}, '{2}');</value>
+    <value>INSERT INTO Punto_Atencion(Nombre_Punto_Atencion, Id_Region, Estado) values ('{0}', {1}, 'A');</value>
   </data>
   <data name="ActualizaPunto" xml:space="preserve">
     <value>UPDATE Punto_Atencion SET Nombre_Punto_Atencion = '{0}', Id_Region = {1} WHERE Id_Punto_Atencion = {2}</value>
@@ -128,20 +128,20 @@
   </data>
   <data name="ObtienePuntos" xml:space="preserve">
     <value>SELECT ROW_NUMBER() OVER(ORDER BY Id_Punto_Atencion) AS FILA, 
-Punto.Id_Punto_Atencion, Punto.Nombre_Punto_Atencion, Region.Id_Region,
-Region.Nombre_Region, Punto.Estado 
+Punto.Id_Punto_Atencion AS Id, Punto.Nombre_Punto_Atencion AS NombrePuntoAtencion, Region.Id_Region AS IdRegion,
+Region.Nombre_Region AS NombreRegion, Punto.Estado AS Estado
 FROM Punto_Atencion Punto
 	INNER JOIN Region Region
 		ON Punto.Id_Region = Region.Id_Region
-	WHERE Punto.Estado = 'A'  {0} {1}</value>
+	WHERE Punto.Estado = 'A' </value>
   </data>
   <data name="ObtieneRegiones" xml:space="preserve">
     <value>SELECT Id_Region, Nombre_Region FROM Region WHERE Estado = 'A';</value>
   </data>
-  <data name="FiltroRegion" xml:space="preserve">
-    <value>AND Region.Id_Region = '{0}'</value>
+  <data name="CuentaUsuariosPuntoAtencion" xml:space="preserve">
+    <value>SELECT COUNT(ID_PUNTO_ATENCION) FROM USUARIO WHERE Id_Punto_Atencion = {0}</value>
   </data>
-  <data name="FiltroBusqueda" xml:space="preserve">
-    <value>AND UPPER(TRIM(Punto.Nombre_Punto_Atencion)) LIKE '%{0}%'</value>
+  <data name="InactivaUsuariosPuntoAtencion" xml:space="preserve">
+    <value>UPDATE Usuario SET Estado = 'I' WHERE Id_Punto_Atencion = {0}</value>
   </data>
 </root>

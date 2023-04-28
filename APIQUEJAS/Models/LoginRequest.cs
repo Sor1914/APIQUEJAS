@@ -6,9 +6,11 @@ using System.Web;
 namespace APIQUEJAS.Models
 {
     public class LoginRequest
-    {
+    {        
         public string Usuario { get; set; }
         public string Pass { get; set; }
+        public string Token { get; set; }
+        public Permisos permisos { get; set; }
     }
 
     public class RegistroRequest

@@ -71,6 +71,18 @@ namespace APIQUEJAS.Sql {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a SELECT USUARIO.ID_ROL AS ID, ROL.Nombre_Rol AS NOMBRE FROM USUARIO
+        ///INNER JOIN ROL	
+        ///	ON USUARIO.ID_ROL = ROL.Id_Rol
+        ///WHERE USUARIO = &apos;{0}&apos;.
+        /// </summary>
+        internal static string ObtieneRol {
+            get {
+                return ResourceManager.GetString("ObtieneRol", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a SELECT COUNT(Id_Usuario) AS EXISTE FROM USUARIO WHERE TRIM(Email) = &apos;{0}&apos; AND Estado = &apos;A&apos;;.
         /// </summary>
         internal static string ValidaCorreoRepetido {

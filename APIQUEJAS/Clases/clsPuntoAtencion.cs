@@ -17,7 +17,7 @@ namespace APIQUEJAS.Clases
 
         public bool insertarPunto(PuntoAtencion punto)
         {
-            consulta = string.Format(sqlPuntosAtencion.InsertaPunto, punto.NombrePuntoAtencion, punto.IdRegion, punto.Estado);
+            consulta = string.Format(sqlPuntosAtencion.InsertaPunto, punto.NombrePuntoAtencion, punto.IdRegion);
             respuesta = _Ad.realizarDml(consulta);
             return respuesta;
         }
@@ -37,14 +37,8 @@ namespace APIQUEJAS.Clases
         }
 
         public DataTable obtenerPuntos(PuntoAtencion punto)
-        {
-            string filtroRegion = "";
-            string filtroBusqueda = "";
-            if(punto.IdRegion != 0)            
-                filtroRegion = string.Format(sqlPuntosAtencion.FiltroRegion, punto.IdRegion);            
-            if (!string.IsNullOrEmpty(punto.busqueda))            
-                filtroBusqueda = string.Format(sqlPuntosAtencion.FiltroBusqueda, punto.busqueda.Trim().ToUpper());            
-            consulta = string.Format(sqlPuntosAtencion.ObtienePuntos, filtroRegion, filtroBusqueda);
+        {                                                     
+            consulta = string.Format(sqlPuntosAtencion.ObtienePuntos);
             dtResultado = _Ad.realizarConsulta(consulta);
             return dtResultado;
         }
@@ -56,6 +50,18 @@ namespace APIQUEJAS.Clases
             return dtResultado;
         }
 
+        public int contarUsuariosPunto(PuntoAtencion punto)
+        {
+            consulta = string.Format(sqlPuntosAtencion.CuentaUsuariosPuntoAtencion, punto.Id);
+            dtResultado = _Ad.realizarConsulta(consulta);
+            return Convert.ToInt32(dtResultado.Rows[0][0]);
+        }
 
+        public bool inactivarUsuariosPunto(PuntoAtencion punto)
+        {
+            consulta = string.Format(sqlPuntosAtencion.InactivaUsuariosPuntoAtencion, punto.Id);
+            respuesta = _Ad.realizarDml(consulta);
+            return respuesta;
+        }
     }
 }

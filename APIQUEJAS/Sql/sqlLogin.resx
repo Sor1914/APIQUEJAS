@@ -136,4 +136,10 @@ VALUES ('{0}',ENCRYPTBYPASSPHRASE('JS0R', '{1}' ),'{2}','{3}','{4}','{5}','{6}',
   <data name="ValidaUsuarioRepetido" xml:space="preserve">
     <value>SELECT COUNT(Id_Usuario) AS EXISTE FROM Usuario WHERE TRIM(Usuario) = '{0}' AND Estado = 'A';</value>
   </data>
+  <data name="ObtieneRol" xml:space="preserve">
+    <value>SELECT USUARIO.ID_ROL AS ID, ROL.Nombre_Rol AS NOMBRE FROM USUARIO
+INNER JOIN ROL	
+	ON USUARIO.ID_ROL = ROL.Id_Rol
+WHERE USUARIO = '{0}'</value>
+  </data>
 </root>

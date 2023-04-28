@@ -70,6 +70,15 @@ namespace APIQUEJAS.Sql {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a SELECT COUNT(ID_PUNTO_ATENCION) FROM USUARIO WHERE Id_Punto_Atencion = {0}.
+        /// </summary>
+        internal static string CuentaUsuariosPuntoAtencion {
+            get {
+                return ResourceManager.GetString("CuentaUsuariosPuntoAtencion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a UPDATE Punto_Atencion SET Estado = &apos;{0}&apos; WHERE Id_Punto_Atencion = {1}.
         /// </summary>
         internal static string EliminaPunto {
@@ -79,25 +88,16 @@ namespace APIQUEJAS.Sql {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a AND UPPER(TRIM(Punto.Nombre_Punto_Atencion)) LIKE &apos;%{0}%&apos;.
+        ///   Busca una cadena traducida similar a UPDATE Usuario SET Estado = &apos;I&apos; WHERE Id_Punto_Atencion = {0}.
         /// </summary>
-        internal static string FiltroBusqueda {
+        internal static string InactivaUsuariosPuntoAtencion {
             get {
-                return ResourceManager.GetString("FiltroBusqueda", resourceCulture);
+                return ResourceManager.GetString("InactivaUsuariosPuntoAtencion", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a AND Region.Id_Region = &apos;{0}&apos;.
-        /// </summary>
-        internal static string FiltroRegion {
-            get {
-                return ResourceManager.GetString("FiltroRegion", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a INSERT INTO Punto_Atencion(Nombre_Punto_Atencion, Id_Region, Estado) values (&apos;{0}&apos;, {1}, &apos;{2}&apos;);.
+        ///   Busca una cadena traducida similar a INSERT INTO Punto_Atencion(Nombre_Punto_Atencion, Id_Region, Estado) values (&apos;{0}&apos;, {1}, &apos;A&apos;);.
         /// </summary>
         internal static string InsertaPunto {
             get {
@@ -107,12 +107,12 @@ namespace APIQUEJAS.Sql {
         
         /// <summary>
         ///   Busca una cadena traducida similar a SELECT ROW_NUMBER() OVER(ORDER BY Id_Punto_Atencion) AS FILA, 
-        ///Punto.Id_Punto_Atencion, Punto.Nombre_Punto_Atencion, Region.Id_Region,
-        ///Region.Nombre_Region, Punto.Estado 
+        ///Punto.Id_Punto_Atencion AS Id, Punto.Nombre_Punto_Atencion AS NombrePuntoAtencion, Region.Id_Region AS IdRegion,
+        ///Region.Nombre_Region AS NombreRegion, Punto.Estado AS Estado
         ///FROM Punto_Atencion Punto
         ///	INNER JOIN Region Region
         ///		ON Punto.Id_Region = Region.Id_Region
-        ///	WHERE Punto.Estado = &apos;A&apos;  {0} {1}.
+        ///	WHERE Punto.Estado = &apos;A&apos; .
         /// </summary>
         internal static string ObtienePuntos {
             get {
