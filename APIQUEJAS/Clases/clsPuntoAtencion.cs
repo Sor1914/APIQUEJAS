@@ -13,26 +13,30 @@ namespace APIQUEJAS.Clases
         string consulta;
         clsSqlServer _Ad = new clsSqlServer();
         DataTable dtResultado = new DataTable();
+        clsBitacora _Bitacora = new clsBitacora();
         bool respuesta;       
 
-        public bool insertarPunto(PuntoAtencion punto)
+        public bool insertarPunto(PuntoAtencion punto, string usuario)
         {
             consulta = string.Format(sqlPuntosAtencion.InsertaPunto, punto.NombrePuntoAtencion, punto.IdRegion);
             respuesta = _Ad.realizarDml(consulta);
+            if (respuesta) _Bitacora.guardarBitacora("Punto_Atencion", consulta, "Punto Atencion", usuario);
             return respuesta;
         }
 
-        public bool actualizarPunto(PuntoAtencion punto)
+        public bool actualizarPunto(PuntoAtencion punto, string usuario)
         {
             consulta = string.Format(sqlPuntosAtencion.ActualizaPunto, punto.NombrePuntoAtencion, punto.IdRegion, punto.Id);
             respuesta = _Ad.realizarDml(consulta);
+            if (respuesta) _Bitacora.guardarBitacora("Punto_Atencion", consulta, "Punto Atencion", usuario);
             return respuesta;
         }
 
-        public bool eliminarPunto(PuntoAtencion punto)
+        public bool eliminarPunto(PuntoAtencion punto, string usuario)
         {
             consulta = string.Format(sqlPuntosAtencion.EliminaPunto, 'E', punto.Id);
             respuesta = _Ad.realizarDml(consulta);
+            if (respuesta) _Bitacora.guardarBitacora("Punto_Atencion", consulta, "Punto Atencion", usuario);
             return respuesta;
         }
 
@@ -57,10 +61,11 @@ namespace APIQUEJAS.Clases
             return Convert.ToInt32(dtResultado.Rows[0][0]);
         }
 
-        public bool inactivarUsuariosPunto(PuntoAtencion punto)
+        public bool inactivarUsuariosPunto(PuntoAtencion punto, string usuario)
         {
             consulta = string.Format(sqlPuntosAtencion.InactivaUsuariosPuntoAtencion, punto.Id);
             respuesta = _Ad.realizarDml(consulta);
+            if (respuesta) _Bitacora.guardarBitacora("Punto_Atencion", consulta, "Punto Atencion", usuario);
             return respuesta;
         }
     }

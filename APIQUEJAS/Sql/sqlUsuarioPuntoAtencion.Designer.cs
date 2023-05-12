@@ -22,14 +22,14 @@ namespace APIQUEJAS.Sql {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class sqlPuntosAtencion {
+    internal class sqlUsuarioPuntoAtencion {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal sqlPuntosAtencion() {
+        internal sqlUsuarioPuntoAtencion() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace APIQUEJAS.Sql {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("APIQUEJAS.Sql.sqlPuntosAtencion", typeof(sqlPuntosAtencion).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("APIQUEJAS.Sql.sqlUsuarioPuntoAtencion", typeof(sqlUsuarioPuntoAtencion).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,71 +61,59 @@ namespace APIQUEJAS.Sql {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a UPDATE Punto_Atencion SET Nombre_Punto_Atencion = &apos;{0}&apos;, Id_Region = {1} WHERE Id_Punto_Atencion = {2}.
+        ///   Busca una cadena traducida similar a UPDATE USUARIO SET Id_Punto_Atencion = {0}, Id_Cargo = {1} WHERE Cui = {2}.
         /// </summary>
-        internal static string ActualizaPunto {
+        internal static string ActualizaDatosUsuario {
             get {
-                return ResourceManager.GetString("ActualizaPunto", resourceCulture);
+                return ResourceManager.GetString("ActualizaDatosUsuario", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a SELECT COUNT(ID_PUNTO_ATENCION) FROM USUARIO WHERE Id_Punto_Atencion = {0}.
+        ///   Busca una cadena traducida similar a SELECT Id_Area, Nombre_Cargo FROM Cargo WHERE Estado = &apos;A&apos; AND Id_Area &lt;&gt; 1.
         /// </summary>
-        internal static string CuentaUsuariosPuntoAtencion {
+        internal static string ObtieneCargos {
             get {
-                return ResourceManager.GetString("CuentaUsuariosPuntoAtencion", resourceCulture);
+                return ResourceManager.GetString("ObtieneCargos", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a UPDATE Punto_Atencion SET Estado = &apos;{0}&apos; WHERE Id_Punto_Atencion = {1}.
+        ///   Busca una cadena traducida similar a SELECT Id_Punto_Atencion Id, Nombre_Punto_Atencion NombrePuntoAtencion, Id_Region IdRegion
+        ///FROM Punto_Atencion WHERE ESTADO = &apos;A&apos; AND Id_Punto_Atencion &lt;&gt; 1.
         /// </summary>
-        internal static string EliminaPunto {
+        internal static string ObtienePuntosAtencion {
             get {
-                return ResourceManager.GetString("EliminaPunto", resourceCulture);
+                return ResourceManager.GetString("ObtienePuntosAtencion", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a UPDATE Usuario SET Estado = &apos;I&apos; WHERE Id_Punto_Atencion = {0}.
+        ///   Busca una cadena traducida similar a SELECT Nombres, Apellidos, Email, Id_Cargo, Punto_Atencion.Nombre_Punto_Atencion, USUARIO.Id_Punto_Atencion FROM USUARIO 
+        ///INNER JOIN Punto_Atencion 
+        ///	ON Punto_Atencion.Id_Punto_Atencion = Usuario.Id_Punto_Atencion
+        ///WHERE Usuario.Estado = &apos;A&apos; AND Cui = &apos;{0}&apos;.
         /// </summary>
-        internal static string InactivaUsuariosPuntoAtencion {
+        internal static string ObtieneUsuarioPorCui {
             get {
-                return ResourceManager.GetString("InactivaUsuariosPuntoAtencion", resourceCulture);
+                return ResourceManager.GetString("ObtieneUsuarioPorCui", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a INSERT INTO Punto_Atencion(Nombre_Punto_Atencion, Id_Region, Estado) values (&apos;{0}&apos;, {1}, &apos;A&apos;);.
+        ///   Busca una cadena traducida similar a SELECT Usuario.Usuario, Usuario.Id_Usuario, Cui, Nombres, Apellidos, CARGO.Nombre_Cargo, Punto_Atencion.Nombre_Punto_Atencion,
+        ///REGION.Nombre_Region, USUARIO.Id_Punto_Atencion, Punto_Atencion.Id_Region, usuario.Id_Cargo, Email FROM USUARIO
+        ///INNER JOIN CARGO
+        ///	ON CARGO.Id_Area = Id_Cargo 
+        ///INNER JOIN Punto_Atencion
+        ///	ON USUARIO.Id_Punto_Atencion = Punto_Atencion.Id_Punto_Atencion
+        ///INNER JOIN Region
+        ///	ON Punto_Atencion.Id_Region = REGION.Id_Region AND Punto_Atencion.Id_Punto_Atencion &lt;&gt; 1
+        ///WHERE USUARIO.Estad [resto de la cadena truncado]&quot;;.
         /// </summary>
-        internal static string InsertaPunto {
+        internal static string ObtieneUsuarios {
             get {
-                return ResourceManager.GetString("InsertaPunto", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a SELECT ROW_NUMBER() OVER(ORDER BY Id_Punto_Atencion) AS FILA, 
-        ///Punto.Id_Punto_Atencion AS Id, Punto.Nombre_Punto_Atencion AS NombrePuntoAtencion, Region.Id_Region AS IdRegion,
-        ///Region.Nombre_Region AS NombreRegion, Punto.Estado AS Estado
-        ///FROM Punto_Atencion Punto
-        ///	INNER JOIN Region Region
-        ///		ON Punto.Id_Region = Region.Id_Region
-        ///	WHERE Punto.Estado = &apos;A&apos; AND Punto.Id_Punto_Atencion &lt;&gt;1.
-        /// </summary>
-        internal static string ObtienePuntos {
-            get {
-                return ResourceManager.GetString("ObtienePuntos", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a SELECT Id_Region, Nombre_Region FROM Region WHERE Estado = &apos;A&apos;;.
-        /// </summary>
-        internal static string ObtieneRegiones {
-            get {
-                return ResourceManager.GetString("ObtieneRegiones", resourceCulture);
+                return ResourceManager.GetString("ObtieneUsuarios", resourceCulture);
             }
         }
     }

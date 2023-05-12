@@ -67,8 +67,8 @@ namespace APIQUEJAS.Controllers
             {
                 if (registro == null)
                     throw new HttpResponseException(HttpStatusCode.BadRequest);
-                if (!validarParametro(registro.Usuario))
-                    throw new HttpResponseException(HttpStatusCode.BadRequest);
+               // if (!validarParametro(registro.Usuario))
+               //     throw new HttpResponseException(HttpStatusCode.BadRequest);
                 bool usuarioExiste = _Consultas.validarUsuarioRepetido(registro.Usuario.Trim().ToUpper(), 1);
                 bool correoExiste = _Consultas.validarUsuarioRepetido(registro.Email.Trim().ToUpper(), 2);
                 bool cuiExiste = _Consultas.validarUsuarioRepetido(registro.CUI.Trim().ToUpper(), 3);

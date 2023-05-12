@@ -1,0 +1,132 @@
+=============================================================================
+Login --> Hora: 07:12:29 --> Fecha: sábado, 6 de mayo de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 07:12:30 --> Fecha: sábado, 6 de mayo de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 07:15:03 --> Fecha: sábado, 6 de mayo de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 07:15:03 --> Fecha: sábado, 6 de mayo de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 07:23:10 --> Fecha: sábado, 6 de mayo de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 07:23:10 --> Fecha: sábado, 6 de mayo de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 07:24:01 --> Fecha: sábado, 6 de mayo de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 07:24:01 --> Fecha: sábado, 6 de mayo de 2023
+Método: {"Usuario":"RECEPTOR","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 07:29:21 --> Fecha: sábado, 6 de mayo de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 07:29:21 --> Fecha: sábado, 6 de mayo de 2023
+Método: {"Usuario":"Eddy","Pass":"Sor123","Token":"NE","permisos":null} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 07:32:51 --> Fecha: sábado, 6 de mayo de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 07:32:51 --> Fecha: sábado, 6 de mayo de 2023
+Método: {"Usuario":"Eddy","Pass":"Sor123","Token":"NE","permisos":null} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 07:33:04 --> Fecha: sábado, 6 de mayo de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 07:33:04 --> Fecha: sábado, 6 de mayo de 2023
+Método: {"Usuario":"Eddy","Pass":"1234","Token":"NE","permisos":null} 
+Autenticar
+
+Solicitud rechazada --> Hora: 07:33:04 --> Fecha: sábado, 6 de mayo de 2023
+Método: No autorizado 
+Autenticar
+
+=============================================================================
+Login --> Hora: 07:33:52 --> Fecha: sábado, 6 de mayo de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 07:33:52 --> Fecha: sábado, 6 de mayo de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 07:40:48 --> Fecha: sábado, 6 de mayo de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 07:40:48 --> Fecha: sábado, 6 de mayo de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 07:48:34 --> Fecha: sábado, 6 de mayo de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 07:48:34 --> Fecha: sábado, 6 de mayo de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 08:17:01 --> Fecha: sábado, 6 de mayo de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 08:17:01 --> Fecha: sábado, 6 de mayo de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 08:31:04 --> Fecha: sábado, 6 de mayo de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 08:31:04 --> Fecha: sábado, 6 de mayo de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 08:33:27 --> Fecha: sábado, 6 de mayo de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 08:33:27 --> Fecha: sábado, 6 de mayo de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 08:59:59 --> Fecha: sábado, 6 de mayo de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 08:59:59 --> Fecha: sábado, 6 de mayo de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 09:06:46 --> Fecha: sábado, 6 de mayo de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 09:06:46 --> Fecha: sábado, 6 de mayo de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 09:15:51 --> Fecha: sábado, 6 de mayo de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 09:15:51 --> Fecha: sábado, 6 de mayo de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
+Autenticar
+

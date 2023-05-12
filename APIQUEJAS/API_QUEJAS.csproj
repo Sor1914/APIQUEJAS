@@ -164,22 +164,34 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Clases\clsBitacora.cs" />
     <Compile Include="Clases\clsPermisos.cs" />
     <Compile Include="Clases\clsPuntoAtencion.cs" />
     <Compile Include="Clases\clsLogin.cs" />
     <Compile Include="Clases\clsSqlServer.cs" />
     <Compile Include="Clases\clsLog.cs" />
+    <Compile Include="Clases\clsTipoQueja.cs" />
+    <Compile Include="Clases\clsUsuarioPuntoAtencion.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\PuntosAtencionController.cs" />
+    <Compile Include="Controllers\TipoQuejaController.cs" />
+    <Compile Include="Controllers\UsuariosPuntoAtencionController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\LoginRequest.cs" />
     <Compile Include="Models\Permisos.cs" />
     <Compile Include="Models\PuntoAtencion.cs" />
+    <Compile Include="Models\TipoQueja.cs" />
+    <Compile Include="Models\UsuarioPuntoAtencion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Security\TokenGenerator.cs" />
     <Compile Include="Security\TokenValidationHandler.cs" />
+    <Compile Include="Sql\sqlBitacora.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sqlBitacora.resx</DependentUpon>
+    </Compile>
     <Compile Include="Sql\sqlLogin.Designer.cs">
       <DependentUpon>sqlLogin.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -189,6 +201,16 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>sqlPuntosAtencion.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Sql\sqlTipoQueja.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sqlTipoQueja.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Sql\sqlUsuarioPuntoAtencion.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sqlUsuarioPuntoAtencion.resx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -277,6 +299,10 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Sql\sqlBitacora.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>sqlBitacora.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Sql\sqlLogin.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>sqlLogin.Designer.cs</LastGenOutput>
@@ -284,6 +310,14 @@
     <EmbeddedResource Include="Sql\sqlPuntosAtencion.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>sqlPuntosAtencion.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sql\sqlTipoQueja.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>sqlTipoQueja.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sql\sqlUsuarioPuntoAtencion.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>sqlUsuarioPuntoAtencion.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

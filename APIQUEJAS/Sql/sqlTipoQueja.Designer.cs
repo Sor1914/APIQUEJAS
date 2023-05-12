@@ -22,14 +22,14 @@ namespace APIQUEJAS.Sql {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class sqlPuntosAtencion {
+    internal class sqlTipoQueja {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal sqlPuntosAtencion() {
+        internal sqlTipoQueja() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace APIQUEJAS.Sql {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("APIQUEJAS.Sql.sqlPuntosAtencion", typeof(sqlPuntosAtencion).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("APIQUEJAS.Sql.sqlTipoQueja", typeof(sqlTipoQueja).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,71 +61,39 @@ namespace APIQUEJAS.Sql {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a UPDATE Punto_Atencion SET Nombre_Punto_Atencion = &apos;{0}&apos;, Id_Region = {1} WHERE Id_Punto_Atencion = {2}.
+        ///   Busca una cadena traducida similar a UPDATE Tipo_Queja SET NOMBRE = &apos;{0}&apos; WHERE Id_Tipo = {1}.
         /// </summary>
-        internal static string ActualizaPunto {
+        internal static string ActualizaTipoQueja {
             get {
-                return ResourceManager.GetString("ActualizaPunto", resourceCulture);
+                return ResourceManager.GetString("ActualizaTipoQueja", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a SELECT COUNT(ID_PUNTO_ATENCION) FROM USUARIO WHERE Id_Punto_Atencion = {0}.
+        ///   Busca una cadena traducida similar a UPDATE Tipo_Queja SET Estado = &apos;E&apos; WHERE Id_Tipo = {0}.
         /// </summary>
-        internal static string CuentaUsuariosPuntoAtencion {
+        internal static string EliminaTipoQueja {
             get {
-                return ResourceManager.GetString("CuentaUsuariosPuntoAtencion", resourceCulture);
+                return ResourceManager.GetString("EliminaTipoQueja", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a UPDATE Punto_Atencion SET Estado = &apos;{0}&apos; WHERE Id_Punto_Atencion = {1}.
+        ///   Busca una cadena traducida similar a INSERT INTO Tipo_Queja(Siglas_Tipo, Nombre, Correlativo)
+        ///VALUES(&apos;{0}&apos;, &apos;{1}&apos;, 0).
         /// </summary>
-        internal static string EliminaPunto {
+        internal static string InsertaTipoQueja {
             get {
-                return ResourceManager.GetString("EliminaPunto", resourceCulture);
+                return ResourceManager.GetString("InsertaTipoQueja", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a UPDATE Usuario SET Estado = &apos;I&apos; WHERE Id_Punto_Atencion = {0}.
+        ///   Busca una cadena traducida similar a SELECT * FROM Tipo_Queja Where Estado = &apos;A&apos;.
         /// </summary>
-        internal static string InactivaUsuariosPuntoAtencion {
+        internal static string ObtieneTipoQueja {
             get {
-                return ResourceManager.GetString("InactivaUsuariosPuntoAtencion", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a INSERT INTO Punto_Atencion(Nombre_Punto_Atencion, Id_Region, Estado) values (&apos;{0}&apos;, {1}, &apos;A&apos;);.
-        /// </summary>
-        internal static string InsertaPunto {
-            get {
-                return ResourceManager.GetString("InsertaPunto", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a SELECT ROW_NUMBER() OVER(ORDER BY Id_Punto_Atencion) AS FILA, 
-        ///Punto.Id_Punto_Atencion AS Id, Punto.Nombre_Punto_Atencion AS NombrePuntoAtencion, Region.Id_Region AS IdRegion,
-        ///Region.Nombre_Region AS NombreRegion, Punto.Estado AS Estado
-        ///FROM Punto_Atencion Punto
-        ///	INNER JOIN Region Region
-        ///		ON Punto.Id_Region = Region.Id_Region
-        ///	WHERE Punto.Estado = &apos;A&apos; AND Punto.Id_Punto_Atencion &lt;&gt;1.
-        /// </summary>
-        internal static string ObtienePuntos {
-            get {
-                return ResourceManager.GetString("ObtienePuntos", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a SELECT Id_Region, Nombre_Region FROM Region WHERE Estado = &apos;A&apos;;.
-        /// </summary>
-        internal static string ObtieneRegiones {
-            get {
-                return ResourceManager.GetString("ObtieneRegiones", resourceCulture);
+                return ResourceManager.GetString("ObtieneTipoQueja", resourceCulture);
             }
         }
     }

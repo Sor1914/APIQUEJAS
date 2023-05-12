@@ -13,6 +13,7 @@ namespace APIQUEJAS.Clases
         string consulta;
         clsSqlServer _Ad = new clsSqlServer();
         DataTable dtResultado = new DataTable();
+        clsBitacora _Bitacora = new clsBitacora();
         bool respuesta;
         public bool validarExistenciaUsuario(string usuario, string pass)
         {
@@ -48,8 +49,9 @@ namespace APIQUEJAS.Clases
             consulta = string.Format(sqlLogin.InsertaUsuario,
                 registro.Usuario, registro.Password, registro.Nombres, registro.Apellidos, registro.Email,
                 registro.CUI, registro.Departamento, registro.IdRol, registro.IdCargo,
-                registro.IdPuntoAtencion, registro.Estado);
+                registro.IdPuntoAtencion, registro.Estado);           
             respuesta = _Ad.realizarDml(consulta);
+            if (respuesta) _Bitacora.guardarBitacora("Usuario", consulta, "Registro", "Sistema");
             return respuesta;
         }
     }

@@ -306,3 +306,11 @@ Solicitud recibida --> Hora: 16:08:41 --> Fecha: viernes, 28 de abril de 2023
 Método: {"Usuario":"JSOR","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
 Autenticar
 
+=============================================================================
+Login --> Hora: 16:17:27 --> Fecha: viernes, 28 de abril de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 16:17:27 --> Fecha: viernes, 28 de abril de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
+Autenticar
+
