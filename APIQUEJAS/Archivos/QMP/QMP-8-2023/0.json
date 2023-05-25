@@ -1,0 +1,544 @@
+{
+	"info": {
+		"_postman_id": "bdcd04e3-085d-496c-aa0a-6bb97586cf27",
+		"name": "Ecommerce Toyota",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23088708"
+	},
+	"item": [
+		{
+			"name": "https://localhost:44380/api/Login/Autenticar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Usuario\": \"INVECOM\",\r\n    \"Pass\": \"q5pB0paFiwDKk9iKkOxQ\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cofal.com.gt/INV.WS.ECOMMERCEREPUESTOS.BE/API/LOGIN/AUTENTICAR",
+					"protocol": "https",
+					"host": [
+						"cofal",
+						"com",
+						"gt"
+					],
+					"path": [
+						"INV.WS.ECOMMERCEREPUESTOS.BE",
+						"API",
+						"LOGIN",
+						"AUTENTICAR"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:62671/API/CDI_INVENTARIOMASIVO",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IklOVkVDT00iLCJuYmYiOjE2ODE0MDY2ODgsImV4cCI6MTY4MTQ5MzA4OCwiaWF0IjoxNjgxNDA2Njg4LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjYyNjcxIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo2MjY3MSJ9.dDj9Pw5KWgY8sAt_Rkqg5zL1mMyncp9DELulUCpTLi4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"CodigoMarca\": \"01\"\r\n}\r\n    \r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cofal.com.gt/INV.WS.ECOMMERCEREPUESTOS.BE/API/INVENTARIO/CDI_INVENTARIOMASIVO",
+					"protocol": "https",
+					"host": [
+						"cofal",
+						"com",
+						"gt"
+					],
+					"path": [
+						"INV.WS.ECOMMERCEREPUESTOS.BE",
+						"API",
+						"INVENTARIO",
+						"CDI_INVENTARIOMASIVO"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:62671/API/CDI_RetornaMarcas",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IklOVkVDT00iLCJuYmYiOjE2ODE0MDY2ODgsImV4cCI6MTY4MTQ5MzA4OCwiaWF0IjoxNjgxNDA2Njg4LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjYyNjcxIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo2MjY3MSJ9.dDj9Pw5KWgY8sAt_Rkqg5zL1mMyncp9DELulUCpTLi4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cofal.com.gt/INV.WS.ECOMMERCEREPUESTOS.BE/API/INVENTARIO/CDI_RETORNAMARCAS",
+					"protocol": "https",
+					"host": [
+						"cofal",
+						"com",
+						"gt"
+					],
+					"path": [
+						"INV.WS.ECOMMERCEREPUESTOS.BE",
+						"API",
+						"INVENTARIO",
+						"CDI_RETORNAMARCAS"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:62671/API/CDI_RetornaLineas",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IklOVkVDT00iLCJuYmYiOjE2ODE0MDY2ODgsImV4cCI6MTY4MTQ5MzA4OCwiaWF0IjoxNjgxNDA2Njg4LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjYyNjcxIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo2MjY3MSJ9.dDj9Pw5KWgY8sAt_Rkqg5zL1mMyncp9DELulUCpTLi4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"CodigoMarca\" : \"01\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cofal.com.gt/INV.WS.ECOMMERCEREPUESTOS.BE/API/INVENTARIO/CDI_RETORNALINEAS",
+					"protocol": "https",
+					"host": [
+						"cofal",
+						"com",
+						"gt"
+					],
+					"path": [
+						"INV.WS.ECOMMERCEREPUESTOS.BE",
+						"API",
+						"INVENTARIO",
+						"CDI_RETORNALINEAS"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:62671/API/CDI_RetornaArticulosXMarcaLineaModelo",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IklOVkVDT00iLCJuYmYiOjE2ODE0MDY2ODgsImV4cCI6MTY4MTQ5MzA4OCwiaWF0IjoxNjgxNDA2Njg4LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjYyNjcxIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo2MjY3MSJ9.dDj9Pw5KWgY8sAt_Rkqg5zL1mMyncp9DELulUCpTLi4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"CodigoMarca\": \"01\",\r\n        \"CodigoLinea\": \"008\",\r\n        \"Modelo\": 2011,\r\n        \"Serie\": \"ZRE141L-AEFDK\",\r\n        \"OpcionFabrica\": \"X-E\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cofal.com.gt/INV.WS.ECOMMERCEREPUESTOS.BE/API/INVENTARIO/CDI_RETORNAARTICULOSXMARCALINEAMODELO",
+					"protocol": "https",
+					"host": [
+						"cofal",
+						"com",
+						"gt"
+					],
+					"path": [
+						"INV.WS.ECOMMERCEREPUESTOS.BE",
+						"API",
+						"INVENTARIO",
+						"CDI_RETORNAARTICULOSXMARCALINEAMODELO"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:62671/API/CDI_RetornaDatosXPlacas",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IklOVkVDT00iLCJuYmYiOjE2ODE0MDY2ODgsImV4cCI6MTY4MTQ5MzA4OCwiaWF0IjoxNjgxNDA2Njg4LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjYyNjcxIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo2MjY3MSJ9.dDj9Pw5KWgY8sAt_Rkqg5zL1mMyncp9DELulUCpTLi4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Placa\":\"P410DPG\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cofal.com.gt/INV.WS.ECOMMERCEREPUESTOS.BE/API/INVENTARIO/CDI_RETORNADATOSXPLACAS",
+					"protocol": "https",
+					"host": [
+						"cofal",
+						"com",
+						"gt"
+					],
+					"path": [
+						"INV.WS.ECOMMERCEREPUESTOS.BE",
+						"API",
+						"INVENTARIO",
+						"CDI_RETORNADATOSXPLACAS"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:62671/API/CDI_RetornaDatosXChasis",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IklOVkVDT00iLCJuYmYiOjE2ODE0MDY2ODgsImV4cCI6MTY4MTQ5MzA4OCwiaWF0IjoxNjgxNDA2Njg4LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjYyNjcxIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo2MjY3MSJ9.dDj9Pw5KWgY8sAt_Rkqg5zL1mMyncp9DELulUCpTLi4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Chasis\":\"JTDBW933894018432\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cofal.com.gt/INV.WS.ECOMMERCEREPUESTOS.BE/API/INVENTARIO/CDI_RETORNADATOSXCHASIS",
+					"protocol": "https",
+					"host": [
+						"cofal",
+						"com",
+						"gt"
+					],
+					"path": [
+						"INV.WS.ECOMMERCEREPUESTOS.BE",
+						"API",
+						"INVENTARIO",
+						"CDI_RETORNADATOSXCHASIS"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:62671/API/ARTICULOS/CDI_DisponibilidadXArticulo",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IklOVkVDT00iLCJuYmYiOjE2ODE0MDY2ODgsImV4cCI6MTY4MTQ5MzA4OCwiaWF0IjoxNjgxNDA2Njg4LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjYyNjcxIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo2MjY3MSJ9.dDj9Pw5KWgY8sAt_Rkqg5zL1mMyncp9DELulUCpTLi4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{            \r\n    \"Linea\": \"002\",\r\n    \"Modelo\": 2012,\r\n    \"Serie\" : \"KUN26L-HRPSY\",\r\n    \"OpcionFabrica\" : \"V)\",\r\n    \"Empresa\":\"CS\",\r\n    \"Inventario\":\"R\",\r\n    \"Bodega\":\"002\",\r\n    \"Articulo\":\"044950K120\"    \r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cofal.com.gt/INV.WS.ECOMMERCEREPUESTOS.BE/API/ARTICULOS/CDI_DISPONIBILIDADXARTICULO",
+					"protocol": "https",
+					"host": [
+						"cofal",
+						"com",
+						"gt"
+					],
+					"path": [
+						"INV.WS.ECOMMERCEREPUESTOS.BE",
+						"API",
+						"ARTICULOS",
+						"CDI_DISPONIBILIDADXARTICULO"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:62671/API/ARTICULOS/CDI_CREANDC",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IklOVkVDT00iLCJuYmYiOjE2ODE0MDY2ODgsImV4cCI6MTY4MTQ5MzA4OCwiaWF0IjoxNjgxNDA2Njg4LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjYyNjcxIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo2MjY3MSJ9.dDj9Pw5KWgY8sAt_Rkqg5zL1mMyncp9DELulUCpTLi4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Nombres\":\"Jonathan Elias\",\r\n    \"Apellidos\":\"Sor Monroy\",\r\n    \"Email\": \"jonathansor2000sm@gmail.com\",\r\n    \"Telefono\":\"48259721\",\r\n    \"Comentario\":\"pRUEBA INFORMÁTICA ELIMINA\",\r\n    \"CodigoOrigen\": \"59\",\r\n    \"CodigoFormulario\": \"32\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cofal.com.gt/INV.WS.ECOMMERCEREPUESTOS.BE/API/ARTICULOS/CDI_CREANDC",
+					"protocol": "https",
+					"host": [
+						"cofal",
+						"com",
+						"gt"
+					],
+					"path": [
+						"INV.WS.ECOMMERCEREPUESTOS.BE",
+						"API",
+						"ARTICULOS",
+						"CDI_CREANDC"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:62671/API/ARTICULOS/CDI_CREARORDENDESPACHO",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IklOVkVDT00iLCJuYmYiOjE2ODE0MDY2ODgsImV4cCI6MTY4MTQ5MzA4OCwiaWF0IjoxNjgxNDA2Njg4LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjYyNjcxIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo2MjY3MSJ9.dDj9Pw5KWgY8sAt_Rkqg5zL1mMyncp9DELulUCpTLi4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"NIT\":\"3709044-5\",\r\n    \"Nombres\":\"Eswin\",\r\n    \"Apellidos\": \" Morales\",\r\n    \"DireccionCliente\":\"Ciudad\",\r\n    \"DireccionEntrega\":\"Manzana 0 lote 0, cerca de lugar de prueba\",\r\n    \"CodigoPais\": \"GT\",\r\n    \"Email\": \"jonathan.sor@cofal.com.gt\",\r\n    \"Telefono\": \"42100240\",\r\n    \"CodigoPostal\": \"01000\",\r\n    \"Empresa\": \"\",    \r\n    \"Marca\": 1,\r\n    \"Linea\": 2,\r\n    \"Modelo\": 2022,\r\n    \"Placa\": \"\",\r\n    \"Chasis\": \"\",\r\n    \"Valor\": 141,\r\n    \"Articulos\": [     \r\n        {\r\n            \"Empresa\": \"CS\",\r\n            \"Inventario\": \"R\",\r\n            \"Bodega\": \"001\",\r\n            \"Articulo\": \"0415237010\",\r\n            \"Unidades\": 1,\r\n            \"PrecioConIva\": 141.0            \r\n        }                 \r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cofal.com.gt/INV.WS.ECOMMERCEREPUESTOS.BE/API/ARTICULOS/CDI_CREARORDENDESPACHO",
+					"protocol": "https",
+					"host": [
+						"cofal",
+						"com",
+						"gt"
+					],
+					"path": [
+						"INV.WS.ECOMMERCEREPUESTOS.BE",
+						"API",
+						"ARTICULOS",
+						"CDI_CREARORDENDESPACHO"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:62671/API/ARTICULOS/CDI_ANULAORDENDESPACHO",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IklOVkVDT00iLCJuYmYiOjE2ODE0MDY2ODgsImV4cCI6MTY4MTQ5MzA4OCwiaWF0IjoxNjgxNDA2Njg4LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjYyNjcxIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo2MjY3MSJ9.dDj9Pw5KWgY8sAt_Rkqg5zL1mMyncp9DELulUCpTLi4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Empresa\": \"CS\",\r\n    \"Orden\": \"4959370\",\r\n    \"Cliente\": \"325426\",\r\n    \"Detalle\": \"Anulación de ejemplo\"\r\n}\r\n{\r\n    \"Empresa\": \"CS\",\r\n    \"Inventario\": \"R\",\r\n    \"Bodega\": \"001\",\r\n    \"Orden\": \"4959370\",\r\n    \"Cliente\": \"325426\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cofal.com.gt/INV.WS.ECOMMERCEREPUESTOS.BE/API/ARTICULOS/CDI_ANULAORDENDESPACHO",
+					"protocol": "https",
+					"host": [
+						"cofal",
+						"com",
+						"gt"
+					],
+					"path": [
+						"INV.WS.ECOMMERCEREPUESTOS.BE",
+						"API",
+						"ARTICULOS",
+						"CDI_ANULAORDENDESPACHO"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:62671/API/ARTICULOS/CDI_GENERAFACTURA",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IklOVkVDT00iLCJuYmYiOjE2ODE0MDY2ODgsImV4cCI6MTY4MTQ5MzA4OCwiaWF0IjoxNjgxNDA2Njg4LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjYyNjcxIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo2MjY3MSJ9.dDj9Pw5KWgY8sAt_Rkqg5zL1mMyncp9DELulUCpTLi4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Empresa\": \"CS\",\r\n    \"Inventario\": \"R\",\r\n    \"Bodega\": \"001\",\r\n    \"Orden\": \"4916814\",    \r\n    \"Tarjeta\": \"1234\",\r\n    \"Autorizacion\": \"A123\",\r\n    \"FechaPago\": \"03-09-2023 17:37:00\",\r\n    \"CantidadCuotas\": 1,\r\n    \"Referencia\": \"REF123\"    \r\n}\r\n\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cofal.com.gt/INV.WS.ECOMMERCEREPUESTOS.BE/API/ARTICULOS/CDI_GENERAFACTURA",
+					"protocol": "https",
+					"host": [
+						"cofal",
+						"com",
+						"gt"
+					],
+					"path": [
+						"INV.WS.ECOMMERCEREPUESTOS.BE",
+						"API",
+						"ARTICULOS",
+						"CDI_GENERAFACTURA"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ticklets Odoo",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IklOVkVDT00iLCJuYmYiOjE2NzMzNzY0NTgsImV4cCI6MTY3MzQ2Mjg1OCwiaWF0IjoxNjczMzc2NDU4LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjQ0MzgwIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo0NDM4MCJ9.SUQvfcM6bF62Z2GMvQjrHy-j6dBkjoHQvS_pxx8CO64",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Asunto\": \"Prueba\",\r\n    \"Descripcion\": \"prueba\",\r\n    \"Email\": \"jonathansor2000sm@gmail.com\",\r\n    \"Telefono\":\"48259722\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44380/api/Ticket/Crear",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"api",
+						"Ticket",
+						"Crear"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

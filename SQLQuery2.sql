@@ -28,9 +28,6 @@ INSERT INTO Rol(Nombre_Rol, Estado, Usuario_Creo) VALUES ('CUENTAHABIENTE', 'A',
 INSERT INTO Rol(Nombre_Rol, Estado, Usuario_Creo) VALUES ('CONSULTA', 'A', 'Sistema');
 
 
-SELECT * FROM USUARIO WHERE USUARIO = '{0}'
-
-
 CREATE TABLE Cargo(
 	Id_Area INT NOT NULL IDENTITY PRIMARY KEY,
 	Nombre_Cargo VARCHAR(15),
@@ -41,7 +38,6 @@ CREATE TABLE Cargo(
 	Estado VARCHAR(1) DEFAULT 'A'
 );
 
-SELECT * FROM CARGO
 INSERT INTO Cargo(Nombre_Cargo, Estado, Usuario_Creo) VALUES ('NOASIGNADO','A','Sistema');
 INSERT INTO Cargo(Nombre_Cargo, Estado, Usuario_Creo) VALUES ('TITULAR','A','Sistema');
 INSERT INTO Cargo(Nombre_Cargo, Estado, Usuario_Creo) VALUES ('SUPLENTE','A','Sistema');
@@ -49,10 +45,6 @@ INSERT INTO Cargo(Nombre_Cargo, Estado, Usuario_Creo) VALUES ('ENCARGADO','A','S
 INSERT INTO Cargo(Nombre_Cargo, Estado, Usuario_Creo) VALUES ('JEFE INMEDIATO','A','Sistema');
 INSERT INTO Cargo(Nombre_Cargo, Estado, Usuario_Creo) VALUES ('RECEP DE QUEJAS','A','Sistema');
 INSERT INTO Cargo(Nombre_Cargo, Estado, Usuario_Creo) VALUES ('CENT DE QUEJAS','A','Sistema');
-
-select * from usuario
-
-UPDATE USUARIO SET Id_Punto_Atencion = 2, Id_Cargo = 2 WHERE Cui = 3034719480109
 
 CREATE TABLE Cuenta(
 	Id_Cuenta INT NOT NULL IDENTITY PRIMARY KEY,
@@ -85,8 +77,6 @@ CREATE TABLE Punto_Atencion(
 	Estado VARCHAR(1) DEFAULT 'A'
 );
 
-
-select * FROM Punto_Atencion
 INSERT INTO Punto_Atencion(Nombre_Punto_Atencion, Id_Region, Estado)
 Values('NOASIGNADO', 1, 'A')
 INSERT INTO Punto_Atencion(Nombre_Punto_Atencion, Id_Region, Estado)
@@ -114,12 +104,28 @@ CREATE TABLE Tipo_Queja(
 	Correlativo INT,
 	Estado VARCHAR(1) DEFAULT 'A'
 );
+
+
+INSERT INTO TIPO_QUEJA(Siglas_Tipo, NOMBRE, CORRELATIVO, ESTADO)
+VALUES ('QMS', 'Queja por mal servicio', 0, 'A')
+
+SELECT CORRELATIVO FROM Tipo_Queja
+	
 	
 CREATE TABLE Origen_Queja(
 	Id_Origen INT NOT NULL IDENTITY PRIMARY KEY,
-	Nombre VARCHAR(5),
+	Nombre VARCHAR(50),
     Estado VARCHAR(1) DEFAULT 'A'
 );
+
+
+insert into Origen_Queja(Nombre, Estado)
+Values('Telefono', 1),
+	('Correo', 1),
+	('Chat', 1),
+	('Presencial', 1),
+	('Aplicación Móvil', 1),
+	('Portal', 1)
 
 
 CREATE TABLE Estado(
@@ -128,13 +134,26 @@ CREATE TABLE Estado(
 	Estado VARCHAR(1) DEFAULT 'A'
 );
 
+INSERT INTO ESTADO (NOMBRE, ESTADO)
+VALUES ('Presentada', 1),
+('Análisis', 1),
+('No aplica', 1),
+('En análisis', 1),
+('Procedente', 1),
+('No procedente', 1),
+('Seguimiento', 1),
+('Reanálisis', 1),
+('Finalizada', 1),
+('No aplica', 1);
+
+
 CREATE TABLE Encabezado_Queja(
 	Id_Encabezado INT NOT NULL IDENTITY PRIMARY KEY,
 	Nombres VARCHAR(25),
 	Apellidos VARCHAR(25),
 	Email VARCHAR(50),
 	Telefono VARCHAR(8),
-	Id_Usuario INT FOREIGN KEY REFERENCES Usuario(Id_Usuario),
+	Usuario varchar(50),
 	Detalle VARCHAR(1000),
 	Id_Estado_Externo INT FOREIGN KEY REFERENCES Estado(Id_Estado),
 	Id_Estado_Interno INT FOREIGN KEY REFERENCES Estado(Id_Estado),
@@ -147,6 +166,9 @@ CREATE TABLE Encabezado_Queja(
 	Id_Punto_Atencion INT FOREIGN KEY REFERENCES Punto_Atencion(Id_Punto_Atencion),
 	Respuesta VARCHAR(100),
 );
+ALTER TABLE Encabezado_Queja
+ADD Correlativo VARCHAR(20);
+
 
 CREATE TABLE Detalle_Queja(
 	Id_Detalle INT NOT NULL IDENTITY PRIMARY KEY,
@@ -154,7 +176,7 @@ CREATE TABLE Detalle_Queja(
 	Comentario VARCHAR(1000),
 	Direccion_Archivo VARCHAR(100),
 	Fecha_Detalle DATETIME DEFAULT CURRENT_TIMESTAMP,
-    Id_Usuario INT FOREIGN KEY REFERENCES Usuario(Id_Usuario)
+    Id_Usuario VARCHAR(30)
 );
 
 CREATE TABLE Bitacora(
@@ -165,179 +187,39 @@ CREATE TABLE Bitacora(
 	Usuario VARCHAR(15),	
 	Fecha DATETIME DEFAULT CURRENT_TIMESTAMP,		
 );
-
-
-
-
-
-
-
 INSERT INTO Usuario(Usuario, Pass, Nombres, Apellidos, Email, Cui, Departamento, Id_Rol, Id_Cargo, Id_Punto_Atencion, Estado)
 VALUES ('JSOR',ENCRYPTBYPASSPHRASE('JS0R', 'Jonathansor200066' ),'Jonathan','Sor','Jonathansor2000sm@gmail.com','3034719480109','Guatemala',1,1,1,'A');
 
+/*********************************************/
+
+SELECT * FROM Encabezado_Queja
+UPDATE Encabezado_Queja SET Id_Punto_Atencion = {0}, Id_Estado_Externo = {1}, Id_Estado_Interno = {2}
+WHERE Id_Encabezado = {3}
+
+SELECT * FROM Estado
+
+UPDATE Encabezado_Queja SET Id_Estado_Externo = {0}, Id_Estado_Interno = {1}, JUSTIFICACION = '{2}' WHERE Id_Encabezado = {3}
+
+SELECT * FROM CARGO
+
+
+SELECT Email FROM USUARIO WHERE Id_Punto_Atencion = 8 AND Id_Cargo IN (2,3,4,5,7)
 
 
 
-
-SELECT * FROM Punto_Atencion 
-UPDATE Punto_Atencion SET ESTADO = 'A'
-
-SELECT * FROM REGION WHERE Estado = 'A'
-
-SELECT * FROM Punto_Atencion WHERE ESTADO = 'A' AND Id_Region = '1' 
-
-
-//Obtener usuarios asociados al punto de atención
-SELECT Usuario, Cui, Nombres, Apellidos, CARGO.Nombre_Cargo  FROM USUARIO 
-INNER JOIN CARGO
-	ON CARGO.Id_Area = Id_Cargo 
-WHERE USUARIO.Estado = 'A' AND Id_Punto_Atencion = '1'
-
-select * FROM USUARIO 
-UPDATE USUARIO SET ESTADO = 'A'
-
-SELECT Id_Punto_Atencion IDPUNTOATENCION, Nombre_Punto_Atencion NOMBREPUNTOATENCION
-FROM Punto_Atencion WHERE ID_REGION = {0} AND ESTADO = 'A'
-
-SELECT Usuario.Id_Usuario, Cui, Nombres, Apellidos, CARGO.Nombre_Cargo, Punto_Atencion.Nombre_Punto_Atencion,
-REGION.Nombre_Region, USUARIO.Id_Punto_Atencion, Punto_Atencion.Id_Region, usuario.Id_Cargo FROM USUARIO 
-INNER JOIN CARGO
-	ON CARGO.Id_Area = Id_Cargo 
-INNER JOIN Punto_Atencion
-	ON USUARIO.Id_Punto_Atencion = Punto_Atencion.Id_Punto_Atencion
-INNER JOIN Region
-	ON Punto_Atencion.Id_Region = REGION.Id_Region
-WHERE USUARIO.Estado = 'A' AND USUARIO.Id_Punto_Atencion = {0} 
-
-SELECT * FROM USUARIO 
-
-UPDATE USUARIO SET Id_Punto_Atencion = {0}, Id_Cargo = {1}, Estado = '{2}' WHERE Id_Usuario = {3}
+select * from usuario
 
 select * from Punto_Atencion
 
-SELECT Usuario.Id_Usuario, Cui, Nombres, Apellidos, CARGO.Nombre_Cargo, Punto_Atencion.Nombre_Punto_Atencion,
-REGION.Nombre_Region, USUARIO.Id_Punto_Atencion, Punto_Atencion.Id_Region, usuario.Id_Cargo FROM USUARIO 
-INNER JOIN CARGO
-	ON CARGO.Id_Area = Id_Cargo 
-INNER JOIN Punto_Atencion
-	ON USUARIO.Id_Punto_Atencion = Punto_Atencion.Id_Punto_Atencion
-INNER JOIN Region
-	ON Punto_Atencion.Id_Region = REGION.Id_Region
-WHERE USUARIO.Estado = 'A' 
+SELECT Email FROM USUARIO WHERE Id_Punto_Atencion = 10 AND Id_Cargo IN (2,3,4,5,7) AND ESTADO = 'A'
 
-select Id_Area, Nombre_Cargo from cargo
+SELECT * FROM Encabezado_Queja
 
-select * from Punto_Atencion
-
-SELECT Id_Punto_Atencion Id, Nombre_Punto_Atencion NombrePuntoAtencion, Id_Region
-FROM Punto_Atencion WHERE ESTADO = 'A' AND Id_Punto_Atencion <> 1
-
-SELECT Id_Punto_Atencion Id, Nombre_Punto_Atencion NombrePuntoAtencion, Id_Region
-FROM Punto_Atencion WHERE ESTADO = 'A' AND Id_Punto_Atencion <> 1
-
-SELECT Usuario.Id_Usuario, Cui, Nombres, Apellidos, CARGO.Nombre_Cargo, Punto_Atencion.Nombre_Punto_Atencion,
-REGION.Nombre_Region, USUARIO.Id_Punto_Atencion, Punto_Atencion.Id_Region, usuario.Id_Cargo FROM USUARIO 
-INNER JOIN CARGO
-	ON CARGO.Id_Area = Id_Cargo 
-INNER JOIN Punto_Atencion
-	ON USUARIO.Id_Punto_Atencion = Punto_Atencion.Id_Punto_Atencion
-INNER JOIN Region
-	ON Punto_Atencion.Id_Region = REGION.Id_Region
-WHERE USUARIO.Estado = 'A' 
-
-SELECT Usuario.Usuario, Usuario.Id_Usuario, Cui, Nombres, Apellidos, CARGO.Nombre_Cargo, Punto_Atencion.Nombre_Punto_Atencion,
-REGION.Nombre_Region, USUARIO.Id_Punto_Atencion, Punto_Atencion.Id_Region, usuario.Id_Cargo FROM USUARIO 
-INNER JOIN CARGO
-	ON CARGO.Id_Area = Id_Cargo 
-INNER JOIN Punto_Atencion
-	ON USUARIO.Id_Punto_Atencion = Punto_Atencion.Id_Punto_Atencion
-INNER JOIN Region
-	ON Punto_Atencion.Id_Region = REGION.Id_Region
-WHERE USUARIO.Estado = 'A' 
+select * from Tipo_Queja
 
 
 
-SELECT Nombres, Apellidos, Email, Id_Cargo FROM USUARIO WHERE Estado = 'A' AND Cui = '{0}'
-SELECT Id_Area, Nombre_Cargo FROM Cargo WHERE Estado = 'A'
+SELECT * FROM Encabezado_Queja 
 
-SELECT * FROM BITACORA 
+SELECT * FROM Estado
 
-USE [QUEJAS]
-GO
-
-INSERT INTO [dbo].[Bitacora]
-           ([Nombre_Tabla]
-           ,[Registro_Antes]
-           ,[Registro_Despues]
-           ,[Tipo_Movimiento]
-           ,[Usuario]
-           ,[Email]
-           ,[Fecha])
-     VALUES
-           ('{0}','{0}','{0}','{0}','{0}','{0}', CURRENT_TIMESTAMP)           
-
-
-		  
-		  INSERT INTO [dbo].[Bitacora]
-           ([Nombre_Tabla]
-           ,[Query]
-           ,[Opcion]
-           ,[Usuario]
-           ,[Fecha])
-     VALUES
-           ('Punto_Atencion','UPDATE Punto_Atencion SET Estado = 'E' WHERE Id_Punto_Atencion = 4','Punto Atencion','JSOR', CURRENT_TIMESTAMP)
-
-		   INSERT INTO [dbo].[Bitacora]
-           ([Nombre_Tabla]
-           ,[Query]
-           ,[Opcion]
-           ,[Usuario]
-           ,[Fecha])
-     VALUES
-           ('Punto_Atencion','UPDATE Punto_Atencion SET Estado = "E" WHERE Id_Punto_Atencion = 4','Punto Atencion','JSOR', CURRENT_TIMESTAMP)
-
-
-		   select * from Bitacora
-
-		   select * from Usuario //9
-
-		   update usuario set Id_Punto_Atencion = 1009 where Id_Usuario = 11
-		   
-		   select * from Bitacora
-
-		   select * FROM Punto_Atencion
-
-		   select * from Region
-
-		   insert into region(Nombre_Region, Estado) 
-		   values ('SUROCCIDENTE', 'A')
-
-
-		  select * from usuario
-
-
-SELECT Nombres, Apellidos, Email, Id_Cargo, Punto_Atencion.Nombre_Punto_Atencion, USUARIO.Id_Punto_Atencion FROM USUARIO 
-INNER JOIN Punto_Atencion 
-	ON Punto_Atencion.Id_Punto_Atencion = Usuario.Id_Punto_Atencion
-WHERE Usuario.Estado = 'A' AND Cui = '{0}'
-
-SELECT * FROM Punto_Atencion
-
-SELECT * FROM Tipo_Queja
-
-
-INSERT INTO Tipo_Queja(Siglas_Tipo, Nombre, Correlativo)
-VALUES('{0}', '{1}', 0)
-
-
-UPDATE Tipo_Queja SET NOMBRE = '{0}' WHERE Id_Tipo = {1}
-
-UPDATE Tipo_Queja SET Estado = 'E' WHERE Id_Tipo = {1}
-
-
-
-SELECT * FROM Tipo_Queja
-select * FROM BITACORA
-
-INSERT INTO Tipo_Queja(Siglas_Tipo, Nombre, Correlativo)
-VALUES('QMP', 'Queja por mal servicio', 0)

@@ -102,3 +102,5 @@ C:\Quejas\APIQUEJAS\APIQUEJAS\obj\Debug\APIQUEJAS.dll
 C:\Quejas\APIQUEJAS\APIQUEJAS\obj\Debug\APIQUEJAS.pdb
 C:\Quejas\APIQUEJAS\APIQUEJAS\obj\Debug\API_QUEJAS.csprojAssemblyReference.cache
 C:\Quejas\APIQUEJAS\APIQUEJAS\obj\Debug\APIQUEJAS.Sql.sqlTipoQueja.resources
+C:\Quejas\APIQUEJAS\APIQUEJAS\obj\Debug\APIQUEJAS.Sql.sqlQueja.resources
+C:\Quejas\APIQUEJAS\APIQUEJAS\obj\Debug\APIQUEJAS.Sql.sqlSeguimiento.resources

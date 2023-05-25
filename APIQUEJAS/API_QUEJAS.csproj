@@ -168,12 +168,16 @@
     <Compile Include="Clases\clsPermisos.cs" />
     <Compile Include="Clases\clsPuntoAtencion.cs" />
     <Compile Include="Clases\clsLogin.cs" />
+    <Compile Include="Clases\clsQueja.cs" />
+    <Compile Include="Clases\clsSeguimiento.cs" />
     <Compile Include="Clases\clsSqlServer.cs" />
     <Compile Include="Clases\clsLog.cs" />
     <Compile Include="Clases\clsTipoQueja.cs" />
     <Compile Include="Clases\clsUsuarioPuntoAtencion.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\PuntosAtencionController.cs" />
+    <Compile Include="Controllers\QuejaController.cs" />
+    <Compile Include="Controllers\SeguimientoController.cs" />
     <Compile Include="Controllers\TipoQuejaController.cs" />
     <Compile Include="Controllers\UsuariosPuntoAtencionController.cs" />
     <Compile Include="Global.asax.cs">
@@ -182,6 +186,8 @@
     <Compile Include="Models\LoginRequest.cs" />
     <Compile Include="Models\Permisos.cs" />
     <Compile Include="Models\PuntoAtencion.cs" />
+    <Compile Include="Models\Queja.cs" />
+    <Compile Include="Models\Seguimiento.cs" />
     <Compile Include="Models\TipoQueja.cs" />
     <Compile Include="Models\UsuarioPuntoAtencion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -201,6 +207,16 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>sqlPuntosAtencion.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Sql\sqlQueja.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sqlQueja.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Sql\sqlSeguimiento.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sqlSeguimiento.resx</DependentUpon>
     </Compile>
     <Compile Include="Sql\sqlTipoQueja.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -310,6 +326,14 @@
     <EmbeddedResource Include="Sql\sqlPuntosAtencion.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>sqlPuntosAtencion.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sql\sqlQueja.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>sqlQueja.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sql\sqlSeguimiento.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>sqlSeguimiento.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Sql\sqlTipoQueja.resx">
       <Generator>ResXFileCodeGenerator</Generator>
