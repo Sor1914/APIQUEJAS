@@ -177,5 +177,38 @@ namespace APIQUEJAS.Sql {
                 return ResourceManager.GetString("ObtieneQuejasAsignacion", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a SELECT Id_Encabezado, Correlativo, 
+        ///Fecha_Ingreso AS Fecha, Id_Estado_Interno, Estado.Nombre AS Estado_Interno, Encabezado_Queja.Detalle
+        ///FROM Encabezado_Queja 
+        ///INNER JOIN USUARIO
+        ///	ON Encabezado_Queja.Id_Punto_Atencion = USUARIO.Id_Punto_Atencion
+        ///INNER JOIN Estado
+        ///	ON Encabezado_Queja.Id_Estado_Interno = ESTADO.Id_Estado
+        ///WHERE Id_Estado_Externo = 4 AND Id_Estado_Interno IN (7) 
+        ///AND USUARIO.Usuario = &apos;{0}&apos;.
+        /// </summary>
+        internal static string ObtieneQuejasCent {
+            get {
+                return ResourceManager.GetString("ObtieneQuejasCent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a SELECT Id_Encabezado, Correlativo, 
+        ///Fecha_Ingreso AS Fecha, Id_Estado_Interno, Estado.Nombre  AS Estado_Interno, Encabezado_Queja.Detalle
+        ///FROM Encabezado_Queja 
+        ///INNER JOIN USUARIO
+        ///	ON Encabezado_Queja.Id_Punto_Atencion = USUARIO.Id_Punto_Atencion
+        ///INNER JOIN Estado
+        ///	ON Encabezado_Queja.Id_Estado_Interno = ESTADO.Id_Estado
+        ///WHERE Id_Estado_Externo = 4 AND Id_Estado_Interno IN (2,5,8)  AND USUARIO.Usuario = &apos;{0}&apos;.
+        /// </summary>
+        internal static string ObtieneQuejasPuntoAtencion {
+            get {
+                return ResourceManager.GetString("ObtieneQuejasPuntoAtencion", resourceCulture);
+            }
+        }
     }
 }

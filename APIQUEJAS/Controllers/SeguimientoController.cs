@@ -45,6 +45,59 @@ namespace APIQUEJAS.Controllers
             }
         }
 
+
+        [HttpGet]
+        [Route("ObtenerQuejasPA")]
+        public IHttpActionResult obtenerQuejasPA()
+        {
+            if (!ModelState.IsValid)
+            {
+                var message = string.Format("Verifique todos los parámetros de entrada.");
+                throw new HttpResponseException(
+                   Request.CreateErrorResponse(HttpStatusCode.BadRequest, message));
+            }
+            try
+            {
+                string username = User.Identity.Name;
+                DataTable dtResultado = _Consultas.obtenerQuejasPA(username);
+                if (dtResultado.Rows.Count > 0)
+                    return Content(HttpStatusCode.Found, dtResultado);
+                else
+                    return Content(HttpStatusCode.NotFound, "No existen registros");
+            }
+            catch (Exception ex)
+            {
+                mensaje = ex.Message;
+                return Content(HttpStatusCode.InternalServerError, mensaje);
+            }
+        }
+
+        [HttpGet]
+        [Route("ObtenerQuejasCent")]
+        public IHttpActionResult obtenerQuejasCent()
+        {
+            if (!ModelState.IsValid)
+            {
+                var message = string.Format("Verifique todos los parámetros de entrada.");
+                throw new HttpResponseException(
+                   Request.CreateErrorResponse(HttpStatusCode.BadRequest, message));
+            }
+            try
+            {
+                string username = User.Identity.Name;
+                DataTable dtResultado = _Consultas.obtenerQuejasCent(username);
+                if (dtResultado.Rows.Count > 0)
+                    return Content(HttpStatusCode.Found, dtResultado);
+                else
+                    return Content(HttpStatusCode.NotFound, "No existen registros");
+            }
+            catch (Exception ex)
+            {
+                mensaje = ex.Message;
+                return Content(HttpStatusCode.InternalServerError, mensaje);
+            }
+        }
+
         [HttpPost]
         [Route("ActualizarPuntoEstadoQueja")]
         public IHttpActionResult actualizarPuntoEstadoQueja([FromBody] EncabezadoQueja encabezado)

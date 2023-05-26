@@ -10,13 +10,13 @@ using System.Web.Http;
 
 namespace APIQUEJAS.Controllers
 {
-    [Authorize(Roles = "ADMINISTRADOR")]
     [RoutePrefix("API/TIPOQUEJA")]
     public class TipoQuejaController : ApiController
     {
         string mensaje;
         clsTipoQueja _Consultas = new clsTipoQueja();
         [HttpGet]
+        [Authorize(Roles = "ADMINISTRADOR,CENTRALIZADOR,RECEPTOR,CUENTAHABIENTE,CONSULTAS")] 
         [Route("ObtenerTiposQueja")]
         public IHttpActionResult obtenerTiposQueja()
         {
@@ -43,6 +43,7 @@ namespace APIQUEJAS.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "ADMINISTRADOR")]
         [Route("InsertarTipoQueja")]
         public IHttpActionResult insertarTipoQueja([FromBody] TipoQueja tipo)
         {
@@ -68,6 +69,7 @@ namespace APIQUEJAS.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "ADMINISTRADOR")]
         [Route("ActualizarTipoQueja")]
         public IHttpActionResult actualizarTipoQueja([FromBody] TipoQueja tipo)
         {
@@ -93,6 +95,7 @@ namespace APIQUEJAS.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "ADMINISTRADOR")]
         [Route("EliminarTipoQueja")]
         public IHttpActionResult eliminarTipoQueja([FromBody] TipoQueja tipo)
         {

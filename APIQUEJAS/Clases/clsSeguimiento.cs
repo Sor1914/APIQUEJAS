@@ -21,6 +21,21 @@ namespace APIQUEJAS.Clases
             dtResultado = _Ad.realizarConsulta(consulta);
             return dtResultado;
         }
+
+        public DataTable obtenerQuejasPA(string usuario)
+        {
+            consulta = string.Format(sqlSeguimiento.ObtieneQuejasPuntoAtencion, usuario);
+            dtResultado = _Ad.realizarConsulta(consulta);
+            return dtResultado;
+        }
+
+        public DataTable obtenerQuejasCent(string usuario)
+        {
+            consulta = string.Format(sqlSeguimiento.ObtieneQuejasCent, usuario);
+            dtResultado = _Ad.realizarConsulta(consulta);
+            return dtResultado;
+        }
+
         public DataTable obtenerEncabezadoQueja(EncabezadoQueja seguimiento)
         {
             consulta = string.Format(sqlSeguimiento.ObtieneEncabezadoQueja, seguimiento.Id_Encabezado);
@@ -79,5 +94,6 @@ namespace APIQUEJAS.Clases
             dtResultado = _Ad.realizarConsulta(consulta);
             return dtResultado;
         }
+   
     }
 }

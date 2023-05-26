@@ -191,35 +191,3 @@ INSERT INTO Usuario(Usuario, Pass, Nombres, Apellidos, Email, Cui, Departamento,
 VALUES ('JSOR',ENCRYPTBYPASSPHRASE('JS0R', 'Jonathansor200066' ),'Jonathan','Sor','Jonathansor2000sm@gmail.com','3034719480109','Guatemala',1,1,1,'A');
 
 /*********************************************/
-
-SELECT * FROM Encabezado_Queja
-UPDATE Encabezado_Queja SET Id_Punto_Atencion = {0}, Id_Estado_Externo = {1}, Id_Estado_Interno = {2}
-WHERE Id_Encabezado = {3}
-
-SELECT * FROM Estado
-
-UPDATE Encabezado_Queja SET Id_Estado_Externo = {0}, Id_Estado_Interno = {1}, JUSTIFICACION = '{2}' WHERE Id_Encabezado = {3}
-
-SELECT * FROM CARGO
-
-
-SELECT Email FROM USUARIO WHERE Id_Punto_Atencion = 8 AND Id_Cargo IN (2,3,4,5,7)
-
-
-
-select * from usuario
-
-select * from Punto_Atencion
-
-SELECT Email FROM USUARIO WHERE Id_Punto_Atencion = 10 AND Id_Cargo IN (2,3,4,5,7) AND ESTADO = 'A'
-
-SELECT * FROM Encabezado_Queja
-
-select * from Tipo_Queja
-
-
-
-SELECT * FROM Encabezado_Queja 
-
-SELECT * FROM Estado
-

@@ -177,4 +177,25 @@ Fecha_Ingreso AS Fecha,
 Correlativo
 FROM Encabezado_Queja WHERE Id_Estado_Externo = 1 AND Id_Estado_Interno = 1</value>
   </data>
+  <data name="ObtieneQuejasCent" xml:space="preserve">
+    <value>SELECT Id_Encabezado, Correlativo, 
+Fecha_Ingreso AS Fecha, Id_Estado_Interno, Estado.Nombre AS Estado_Interno, Encabezado_Queja.Detalle
+FROM Encabezado_Queja 
+INNER JOIN USUARIO
+	ON Encabezado_Queja.Id_Punto_Atencion = USUARIO.Id_Punto_Atencion
+INNER JOIN Estado
+	ON Encabezado_Queja.Id_Estado_Interno = ESTADO.Id_Estado
+WHERE Id_Estado_Externo = 4 AND Id_Estado_Interno IN (7) 
+AND USUARIO.Usuario = '{0}'</value>
+  </data>
+  <data name="ObtieneQuejasPuntoAtencion" xml:space="preserve">
+    <value>SELECT Id_Encabezado, Correlativo, 
+Fecha_Ingreso AS Fecha, Id_Estado_Interno, Estado.Nombre  AS Estado_Interno, Encabezado_Queja.Detalle
+FROM Encabezado_Queja 
+INNER JOIN USUARIO
+	ON Encabezado_Queja.Id_Punto_Atencion = USUARIO.Id_Punto_Atencion
+INNER JOIN Estado
+	ON Encabezado_Queja.Id_Estado_Interno = ESTADO.Id_Estado
+WHERE Id_Estado_Externo = 4 AND Id_Estado_Interno IN (2,5,8)  AND USUARIO.Usuario = '{0}'</value>
+  </data>
 </root>
