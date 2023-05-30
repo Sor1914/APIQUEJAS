@@ -6,7 +6,7 @@ edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <_PublishTargetUrl>C:\Users\jsor1\OneDrive - COFIÑO STAHL Y CIA, S.A\Documentos\Proyecto Quejas</_PublishTargetUrl>
+    <_PublishTargetUrl>C:\Users\jsor1\OneDrive - COFIÑO STAHL Y CIA, S.A (1)\Escritorio\Quejas\API_QUEJAS</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="Areas/HelpPage/HelpPage.css">
@@ -79,10 +79,10 @@ edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 
       <publishTime>09/10/2013 16:29:20</publishTime>
     </File>
     <File Include="bin/APIQUEJAS.dll">
-      <publishTime>05/26/2023 16:26:26</publishTime>
+      <publishTime>05/26/2023 20:45:47</publishTime>
     </File>
     <File Include="bin/APIQUEJAS.pdb">
-      <publishTime>05/26/2023 16:26:26</publishTime>
+      <publishTime>05/26/2023 20:45:47</publishTime>
     </File>
     <File Include="bin/es/System.Net.Http.Formatting.resources.dll">
       <publishTime>02/01/2018 12:17:28</publishTime>
@@ -394,7 +394,7 @@ edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 
       <publishTime>03/13/2023 18:03:47</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>05/26/2023 16:26:27</publishTime>
+      <publishTime>05/26/2023 19:18:34</publishTime>
     </File>
   </ItemGroup>
 </Project>

@@ -91,6 +91,7 @@ C:\Quejas\APIQUEJAS\APIQUEJAS\bin\es\System.Web.Razor.resources.dll
 C:\Quejas\APIQUEJAS\APIQUEJAS\bin\es\System.Web.WebPages.resources.dll
 C:\Quejas\APIQUEJAS\APIQUEJAS\bin\es\System.Web.WebPages.Deployment.resources.dll
 C:\Quejas\APIQUEJAS\APIQUEJAS\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Quejas\APIQUEJAS\APIQUEJAS\obj\Debug\API_QUEJAS.csprojAssemblyReference.cache
 C:\Quejas\APIQUEJAS\APIQUEJAS\obj\Debug\APIQUEJAS.Sql.sqlBitacora.resources
 C:\Quejas\APIQUEJAS\APIQUEJAS\obj\Debug\APIQUEJAS.Sql.sqlLogin.resources
 C:\Quejas\APIQUEJAS\APIQUEJAS\obj\Debug\APIQUEJAS.Sql.sqlPuntosAtencion.resources

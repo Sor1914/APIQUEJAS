@@ -14,7 +14,7 @@ using System.Web.Http;
 
 namespace APIQUEJAS.Controllers
 {
-    [Authorize(Roles = "ADMINISTRADOR, CENTRALIZADOR")]
+    [Authorize(Roles = "ADMINISTRADOR, CENTRALIZADOR, CUENTAHABIENTE")]
     [RoutePrefix("API/SEGUIMIENTO")]
     public class SeguimientoController : ApiController
     {

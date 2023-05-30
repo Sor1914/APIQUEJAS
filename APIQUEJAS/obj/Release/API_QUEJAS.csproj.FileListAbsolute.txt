@@ -105,3 +105,4 @@ C:\Quejas\APIQUEJAS\APIQUEJAS\obj\Release\API_QUEJAS.csproj.CoreCompileInputs.ca
 C:\Quejas\APIQUEJAS\APIQUEJAS\obj\Release\API_QUEJAS.csproj.CopyComplete
 C:\Quejas\APIQUEJAS\APIQUEJAS\obj\Release\APIQUEJAS.dll
 C:\Quejas\APIQUEJAS\APIQUEJAS\obj\Release\APIQUEJAS.pdb
+C:\Quejas\APIQUEJAS\APIQUEJAS\obj\Release\API_QUEJAS.csprojAssemblyReference.cache

@@ -358,3 +358,19 @@ Solicitud recibida --> Hora: 16:21:00 --> Fecha: viernes, 26 de mayo de 2023
 Método: {"Usuario":"JSOR","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
 Autenticar
 
+=============================================================================
+Login --> Hora: 17:53:43 --> Fecha: viernes, 26 de mayo de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 17:53:43 --> Fecha: viernes, 26 de mayo de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
+Autenticar
+
+=============================================================================
+Login --> Hora: 18:04:59 --> Fecha: viernes, 26 de mayo de 2023
+=============================================================================
+
+Solicitud recibida --> Hora: 18:04:59 --> Fecha: viernes, 26 de mayo de 2023
+Método: {"Usuario":"JSOR","Pass":"Jonathansor200066","Token":"NE","permisos":null} 
+Autenticar
+

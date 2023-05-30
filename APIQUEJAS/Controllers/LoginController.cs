@@ -19,7 +19,7 @@ namespace APIQUEJAS.Controllers
     {
         clsPermisos _Permisos = new clsPermisos();
         clsLogin _Consultas = new clsLogin();
-        clsLog _Log = new clsLog();
+        
         /*
          * Code = "200" - Devuelve el JWT 
          * Code = "401" - Noe está autorizado
@@ -28,8 +28,6 @@ namespace APIQUEJAS.Controllers
         [Route("AUTENTICAR")]
         public IHttpActionResult autenticar(LoginRequest login)
         {
-            _Log.guardarBitacora("Login");
-            _Log.guardarBitacoraCuerpo("Solicitud recibida", "Autenticar", JsonConvert.SerializeObject(login));
             if (login == null)
                 throw new HttpResponseException(HttpStatusCode.BadRequest);
             if (!validarParametro(login.Usuario) || !validarParametro(login.Pass))
@@ -53,7 +51,7 @@ namespace APIQUEJAS.Controllers
             }
             else
             {
-                _Log.guardarBitacoraCuerpo("Solicitud rechazada", "Autenticar", "No autorizado");
+                //_Log.guardarBitacoraCuerpo("Solicitud rechazada", "Autenticar", "No autorizado");
                 return Unauthorized();
             }
 
