@@ -191,3 +191,25 @@ INSERT INTO Usuario(Usuario, Pass, Nombres, Apellidos, Email, Cui, Departamento,
 VALUES ('JSOR',ENCRYPTBYPASSPHRASE('JS0R', 'Jonathansor200066' ),'Jonathan','Sor','Jonathansor2000sm@gmail.com','3034719480109','Guatemala',1,1,1,'A');
 
 /*********************************************/
+
+
+SELECT * FROM Encabezado_Queja
+
+SELECT CONVERT(varchar(10), Encabezado_Queja.Fecha_Ingreso, 120) AS Fecha_Ingreso
+FROM Encabezado_Queja;
+
+
+SELECT Encabezado_Queja.Correlativo, Tipo_Queja.Nombre AS Nombre_Tipo_Queja, Nombre_Punto_Atencion,
+ESTADO.Nombre AS Estado_Interno, ESTADO2.Nombre AS Estado_Externo, Encabezado_Queja.JUSTIFICACION, Encabezado_Queja.Detalle,
+Origen_Queja.Nombre AS Nombre_Origen, Encabezado_Queja.Fecha_Ingreso
+FROM Encabezado_Queja
+INNER JOIN Tipo_Queja
+	ON Encabezado_Queja.Id_Tipo = Tipo_Queja.Id_Tipo
+INNER JOIN Punto_Atencion
+	ON Punto_Atencion.Id_Punto_Atencion = Encabezado_Queja.Id_Punto_Atencion
+INNER JOIN Estado
+	ON ESTADO.Id_Estado = Encabezado_Queja.Id_Estado_Interno
+INNER JOIN Estado Estado2
+	ON Estado2.Id_Estado = Encabezado_Queja.Id_Estado_Externo
+INNER JOIN Origen_Queja
+	ON Encabezado_Queja.Id_Origen = Origen_Queja.Id_Origen 

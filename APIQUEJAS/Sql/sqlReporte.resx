@@ -121,7 +121,7 @@
     <value>Encabezado_Queja.CORRELATIVO = '{0}'</value>
   </data>
   <data name="FiltroFechas" xml:space="preserve">
-    <value>Encabezado_Queja.Fecha_Ingreso &gt;= '{0}' AND Encabezado_Queja.Fecha_Ingreso &lt;= '{1}'</value>
+    <value>CONVERT(varchar(10), Encabezado_Queja.Fecha_Ingreso, 120)  &gt;= '{0}' AND CONVERT(varchar(10), Encabezado_Queja.Fecha_Ingreso, 120) &lt;= '{1}'</value>
   </data>
   <data name="FiltroPuntoAtencion" xml:space="preserve">
     <value>Encabezado_Queja.Id_Punto_Atencion = {0}</value>
@@ -131,7 +131,7 @@
   </data>
   <data name="ObtieneQuejasParaReporte" xml:space="preserve">
     <value>SELECT Encabezado_Queja.Correlativo, Tipo_Queja.Nombre AS Nombre_Tipo_Queja, Nombre_Punto_Atencion,
-ESTADO.Nombre AS Estado_Interno, ESTADO2.Nombre AS Estado_Externo, Encabezado_Queja.JUSTIFICACION, 
+ESTADO.Nombre AS Estado_Interno, ESTADO2.Nombre AS Estado_Externo, Encabezado_Queja.JUSTIFICACION, Encabezado_Queja.Detalle,
 Origen_Queja.Nombre AS Nombre_Origen, Encabezado_Queja.Fecha_Ingreso
 FROM Encabezado_Queja
 INNER JOIN Tipo_Queja

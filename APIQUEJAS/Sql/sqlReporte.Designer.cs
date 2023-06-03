@@ -70,7 +70,7 @@ namespace APIQUEJAS.Sql {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Encabezado_Queja.Fecha_Ingreso &gt;= &apos;{0}&apos; AND Encabezado_Queja.Fecha_Ingreso &lt;= &apos;{1}&apos;.
+        ///   Busca una cadena traducida similar a CONVERT(varchar(10), Encabezado_Queja.Fecha_Ingreso, 120)  &gt;= &apos;{0}&apos; AND CONVERT(varchar(10), Encabezado_Queja.Fecha_Ingreso, 120) &lt;= &apos;{1}&apos;.
         /// </summary>
         internal static string FiltroFechas {
             get {
@@ -98,15 +98,14 @@ namespace APIQUEJAS.Sql {
         
         /// <summary>
         ///   Busca una cadena traducida similar a SELECT Encabezado_Queja.Correlativo, Tipo_Queja.Nombre AS Nombre_Tipo_Queja, Nombre_Punto_Atencion,
-        ///ESTADO.Nombre AS Estado_Interno, ESTADO2.Nombre AS Estado_Externo, Encabezado_Queja.JUSTIFICACION, 
+        ///ESTADO.Nombre AS Estado_Interno, ESTADO2.Nombre AS Estado_Externo, Encabezado_Queja.JUSTIFICACION, Encabezado_Queja.Detalle,
         ///Origen_Queja.Nombre AS Nombre_Origen, Encabezado_Queja.Fecha_Ingreso
         ///FROM Encabezado_Queja
         ///INNER JOIN Tipo_Queja
         ///	ON Encabezado_Queja.Id_Tipo = Tipo_Queja.Id_Tipo
         ///INNER JOIN Punto_Atencion
         ///	ON Punto_Atencion.Id_Punto_Atencion = Encabezado_Queja.Id_Punto_Atencion
-        ///INNER JOIN Estado
-        ///	ON ESTADO.Id_Estado = [resto de la cadena truncado]&quot;;.
+        ///INNER JOIN Estad [resto de la cadena truncado]&quot;;.
         /// </summary>
         internal static string ObtieneQuejasParaReporte {
             get {
