@@ -11,6 +11,9 @@ DROP TABLE Punto_Atencion;
 DROP TABLE Region; 
 DROP TABLE Rol;  
 
+Create database Quejas;
+Use Quejas;
+
 CREATE TABLE Rol(
 	Id_Rol INT NOT NULL IDENTITY PRIMARY KEY,
 	Nombre_Rol VARCHAR(15),
@@ -188,7 +191,7 @@ CREATE TABLE Bitacora(
 	Fecha DATETIME DEFAULT CURRENT_TIMESTAMP,		
 );
 INSERT INTO Usuario(Usuario, Pass, Nombres, Apellidos, Email, Cui, Departamento, Id_Rol, Id_Cargo, Id_Punto_Atencion, Estado)
-VALUES ('JSOR',ENCRYPTBYPASSPHRASE('JS0R', 'Jonathansor200066' ),'Jonathan','Sor','Jonathansor2000sm@gmail.com','3034719480109','Guatemala',1,1,1,'A');
+VALUES ('JSOR',ENCRYPTBYPASSPHRASE('JS0R', 'Jonathansor' ),'Jonathan','Sor','Jonathansor2000sm@gmail.com','3034719480109','Guatemala',1,1,1,'A');
 
 /*********************************************/
 
